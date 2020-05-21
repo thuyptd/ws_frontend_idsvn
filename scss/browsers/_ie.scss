@@ -1,0 +1,12 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ */
+  .site__sidebar,
+  .site__main {
+    min-height: calc(100vh - 40px);
+  }
+}
+
+/* Edge */
+@supports (-ms-ime-align:auto) {
+
+}

@@ -1,0 +1,23 @@
+//grid
+$totalgr: 12;
+//end grid
+@function column-width($col) {
+  @return percentage($col/$totalgr);
+}
+
+@for $i from 1 through $totalgr {
+  .col-#{$i} { width: column-width($i); padding: 0 27px; };
+}
+.row {
+  @include flex-style();
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  margin: 0 -27px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}

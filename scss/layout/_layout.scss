@@ -1,0 +1,33 @@
+.ttl {
+  font-family: $font-title;
+}
+
+section {
+  min-height: 100vh;
+  padding: 20px 0;
+
+  h2 {
+    font-size: 48px;
+    margin-top: 0;
+  }
+}
+
+.site__main {
+  padding: $spacer-standard $spacer-standard $spacer-standard $w-sidebar + $spacer-standard;
+  @include bgCrossDot(109px, $c-grey-light, $c-grey-light);
+  transition: all 0.3s ease;
+
+  article {
+    background-color: $c-white;
+    padding: $spacer-standard;
+    @include box-shadow(0, 0, 3px, 0, rgba($c-black, 0.5));
+    margin: 20px 0;
+  }
+
+  pre {
+    background-color: $c-grey-light;
+    padding: 10px;
+    overflow: auto;
+    max-height: 500px;
+  }
+}

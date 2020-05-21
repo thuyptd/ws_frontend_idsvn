@@ -1,0 +1,14 @@
+.site__sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  width: $w-sidebar;
+  background-color: $bg-sidebar;
+  padding: $spacer-standard;
+
+  ul {
+    padding-left: $spacer-standard;
+  }
+}

@@ -1,0 +1,51 @@
+//variable math
+$pi: 3.14159265359;
+$_precision: 10;
+//end variable math
+
+//font style
+$font-main-name: 'Noto Sans CJK JP';
+$font-title-name: 'Playball';
+$font-main: #{$font-main-name}, sans-serif;
+$font-title: #{$font-title-name}, sans-serif;
+$font-awesome: 'Font Awesome 5 Free';
+
+$thin: 100;
+$thiner: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$italic: italic;
+
+//size
+$browser-context: 16px; // Default
+$spacer-standard: 20px;
+
+//color
+$c-main: #DE6113;
+$c-grey-light: #EEEEEE;
+$c-grey: #DDDDDD;
+$c-red-dark: #B21B18;
+$c-blue: #359CD8;
+$c-white: #fff;
+$c-black: #000;
+$c-green: #28a745;
+
+//text color
+$t-main: #333333;
+$t-link: #DE6113;
+$t-link-blue: #0F8CD0;
+$t-placeholder: #999999;
+$t-grey: #999999;
+
+//background
+$bg-table-th: #545B60;
+
+//sidebar
+$bg-sidebar: #f0fafa;
+$w-sidebar: 320px;
+
+

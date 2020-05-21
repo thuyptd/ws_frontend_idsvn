@@ -1,0 +1,51 @@
+@import '../vendor/fontawesome/variables';
+@import '../vendor/fontawesome/mixins';
+@import '../vendor/fontawesome/core';
+@import '../vendor/fontawesome/larger';
+@import '../vendor/fontawesome/fixed-width';
+@import '../vendor/fontawesome/list';
+@import '../vendor/fontawesome/bordered-pulled';
+@import '../vendor/fontawesome/animated';
+@import '../vendor/fontawesome/rotated-flipped';
+@import '../vendor/fontawesome/stacked';
+.#{$fa-css-prefix}-envelope:before { content: fa-content($fa-var-envelope); }
+.#{$fa-css-prefix}-lock:before { content: fa-content($fa-var-lock); }
+.#{$fa-css-prefix}-lock-open:before { content: fa-content($fa-var-lock-open); }
+.#{$fa-css-prefix}-user-circle:before { content: fa-content($fa-var-user-circle); }
+.#{$fa-css-prefix}-home:before { content: fa-content($fa-var-home); }
+.#{$fa-css-prefix}-file-upload:before { content: fa-content($fa-var-file-upload); }
+.#{$fa-css-prefix}-address-book:before { content: fa-content($fa-var-address-book); }
+.#{$fa-css-prefix}-history:before { content: fa-content($fa-var-history); }
+.#{$fa-css-prefix}-cog:before { content: fa-content($fa-var-cog); }
+.#{$fa-css-prefix}-sign-out-alt:before { content: fa-content($fa-var-sign-out-alt); }
+.#{$fa-css-prefix}-exclamation-triangle:before { content: fa-content($fa-var-exclamation-triangle); }
+.#{$fa-css-prefix}-times:before { content: fa-content($fa-var-times); }
+.#{$fa-css-prefix}-html5:before { content: fa-content($fa-var-html5); }
+@import '../vendor/fontawesome/screen-reader';
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('#{$fa-font-path}/fa-solid-900.eot');
+  src: url('#{$fa-font-path}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+  url('#{$fa-font-path}/fa-solid-900.woff2') format('woff2'),
+  url('#{$fa-font-path}/fa-solid-900.woff') format('woff'),
+  url('#{$fa-font-path}/fa-solid-900.ttf') format('truetype'),
+  url('#{$fa-font-path}/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+.fa,
+.fas,
+.fab {
+  font-family: 'Font Awesome 5 Free';
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.fab {
+  font-weight: 400;
+}

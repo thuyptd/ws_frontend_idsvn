@@ -1,0 +1,118 @@
+@include font-face($font-main-name, 'NotoSansCJKjp-Regular', normal, normal);
+@include font-face($font-main-name, 'NotoSansCJKjp-Bold', bold, normal);
+@include font-face($font-main-name, 'NotoSansCJKjp-Light', 300, normal);
+@include font-face($font-main-name, 'NotoSansCJKjp-Medium', 500, normal);
+@include font-face($font-main-name, 'NotoSansCJKjp-Black', 900, normal);
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+html, body{
+  font-family: $font-main;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $browser-context;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  color: $t-main;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 1200px;
+  margin: auto;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus{
+    outline: none;
+  }
+
+  * {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+a {
+  color: $t-link;
+  &:hover,
+  &:focus {
+    color: rgba($t-link, 0.8);
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: rem(16px) 0;
+}
+
+p {
+  margin: rem(10px) 0;
+}
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+$ms: 0, 5, 10, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100;
+@each $m in $ms{
+  .m#{$m}{
+    margin: #{$m}px!important;
+  }
+
+  .mr#{$m}{
+    margin-right: #{$m}px!important;
+  }
+
+  .ml#{$m}{
+    margin-left: #{$m}px!important;
+  }
+
+  .mt#{$m}{
+    margin-top: #{$m}px!important;
+  }
+
+  .mb#{$m}{
+    margin-bottom: #{$m}px!important;
+  }
+
+}
+
+.text {
+  &-center {
+    text-align: center !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+}
