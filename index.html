@@ -7,47 +7,186 @@
 </head>
 <body>
 <!--.site__header-->
-<header class="site__header">
+<!--<header class="site__header">
 
-</header><!--/.site__header-->
+</header>--><!--/.site__header-->
 
 <!--.site__sidebar-->
 <aside class="site__sidebar">
     <h1 class="logo"><a href="https://vn.ids.jp/"><img src="img/ids.png" width="100" alt="IDS VIETNAM Logo"/></a></h1>
     <h3 class="ttl">Menu</h3>
-    <ul>
-        <li>
-            <a href="#htmlSection"><span class="fab fa-html5"></span>HTML</a>
-            <ul>
+    <ul class="menu">
+        <li class="menu__item">
+            <a href="#foreword"><img src="img/svg/home-solid.svg" alt="Foreword">Foreword</a>
+        </li>
+        <li class="menu__item">
+            <a href="#htmlSection"><img src="img/svg/html5-brands.svg" alt="html">HTML</a>
+            <ul class="menu__sub">
                 <li><a href="#">Introduce</a></li>
                 <li><a href="#">Note</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#cssSection">CSS</a>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+        <li class="menu__item">
+            <a href="#cssSection"><img src="img/svg/css3-alt-brands.svg" alt="Foreword">CSS</a>
+            <ul class="menu__sub">
+                <li class="menu__sub-item"><a href="#"></a></li>
+                <li class="menu__sub-item"><a href="#"></a></li>
             </ul>
         </li>
-        <li>
-            <a href="#javascriptSection">Javascript</a>
+        <li class="menu__item">
+            <a href="#javascriptSection"><img src="img/svg/js-brands.svg" alt="Foreword">Javascript</a>
+        </li>
+        <li class="menu__item">
+            <a href="#fqa"><img src="img/svg/question-circle-solid.svg" alt="Foreword">FQA</a>
         </li>
     </ul>
 </aside><!--/.site__sidebar-->
 
 <!--.site__main-->
 <main class="site__main">
+    <section id="foreword">
+        <h2 class="ttl">Foreword</h2>
+    </section>
+
     <section id="htmlSection">
         <h2 class="ttl">HTML</h2>
+        <h3>Introduce</h3>
         <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
-            <pre><code>&lt;!DOCTYPE HTML&gt;
+            <h4>Concept of HTML</h4>
+            <ul>
+                <li>HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content.</li>
+                <li>For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.</li>
+                <li>HTML5 is the latest version of HTML, the code that describes web pages. It's actually three kinds of code: HTML, which provides the structure; Cascading Style Sheets (CSS), which take care of presentation; and JavaScript, which makes things happen.</li>
+            </ul>
+
+            <h4>HTML Element</h4>
+
+            <div class="row row-revert">
+                <div class="col-6">
+                    <img src="img/html_element_1.png" alt="HTML element struct">
+                </div>
+
+                <div class="col-6">
+                    <ul>
+                        <li>The main parts of element are as follows:
+                            <ul>
+                                <li><strong>The opening tag:</strong> This consists of the name of the element (in this case, p), wrapped in opening and closing <strong>angle brackets</strong>.</li>
+                                <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. </li>
+                                <li><strong>The content:</strong> This is the content of the element, which in this case is just text.</li>
+                                <li><strong>The element:</strong> The opening tag, the closing tag, and the content together comprise the element.</li>
+                            </ul>
+                        </li>
+                        <li>The difference between start tags and end tags is that the latter includes a slash before the tag name.</li>
+                        <li>If element has no content that is called <strong>Empty Element.</strong></li>
+                        <li>HTML elements can be nested (elements can contain elements).</li>
+                        <li>Some specials elements have no the closing tag (img, hr, br, input,…)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Block level elements in HTML: A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+            <p><img src="img/html_element_2.png" alt=""></p>
+
+            <p>Inline elements in HTML:  An inline element does not start on a new line and only takes up as much width as necessary.</p>
+            <p><img src="img/html_element_3.png" alt=""></p>
+
+            <h4>HTML Element</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;article&gt;</span></td>
+                        <td>Defines an article in a document</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;aside&gt;</span></td>
+                        <td>Defines content aside from the page content</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;details&gt;</span></td>
+                        <td>Defines additional details that the user can view or hide</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;figcaption&gt;</span></td>
+                        <td>Defines a caption for a &lt;figure&gt; element</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;figure&gt;</span></td>
+                        <td>Defines self-contained content</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;footer&gt;</span></td>
+                        <td>Defines a footer for a document or section</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;header&gt;</span></td>
+                        <td>Defines a header for a document or section</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;main&gt;</span></td>
+                        <td>Defines the main content of a document</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;mark&gt;</span></td>
+                        <td>Defines marked/highlighted text</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;nav&gt;</span></td>
+                        <td>Defines navigation links</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>HTML Attribute</h4>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Attributes contain extra information about the element that you don't want to appear in the actual content.</li>
+                        <li>An attribute should always have the following:
+                            <ul>
+                                <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+                                <li>The attribute name, followed by an equals sign.</li>
+                                <li>The attribute value, wrapped by opening and closing quotation marks.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <p><img src="img/html_element_4.png" alt=""></p>
+                </div>
+            </div>
+
+            <h5>Attention</h5>
+            <h5><span class="text-red">- class</span></h5>
+            <p>The HTML class attribute is used to define equal styles for elements with the same class name.<br>
+                HTML elements can have more than one class name, each class name must be separated by a space.</p>
+
+            <h5><span class="text-red">- id</span></h5>
+            <p>The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).</p>
+            <p><strong>Note:<br></strong>
+                - The class, id value is case-sensitive.<br>
+                - The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.)</p>
+        </article>
+
+        <h3>Anatomy of an HTML document</h3>
+        <article>
+            <ul>
+                <li>The <span class="text-red">&lt;!DOCTYPE html&gt;</span> declaration defines this document to be HTML5</li>
+                <li>The <span class="text-red">&lt;html&gt;</span> attribute  defines the language of the document</li>
+                <li>The <span class="text-red">&lt;lang&gt;</span> element is the root element of an HTML page</li>
+                <li>The <span class="text-red">&lt;meta&gt;</span> element contains meta information about the document</li>
+                <li>The <span class="text-red">&lt;charset&gt;</span> attribure defines the character set used in the document.</li>
+                <li>The <span class="text-red">UTF-8</span> (Unicode) covers almost all of the characters and symbols in the world.</li>
+                <li>The <span class="text-red">&lt;title&gt;</span> element specifies a title for the document. It is also used to describe the page when you bookmark/favourite it.</li>
+                <li>The <span class="text-red">&lt;body&gt;</span> element contains the visible page content</li>
+                <li>The <span class="text-red">&lt;h1&gt;</span>,<span class="text-red">&lt;h2&gt;</span>,...,<span class="text-red">&lt;h6&gt;</span> element defines a large heading</li>
+                <li>The <span class="text-red">&lt;p&gt;</span> element defines a paragraph</li>
+            </ul>
+
+<pre><code>&lt;!DOCTYPE HTML&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
@@ -99,23 +238,30 @@
 </code></pre>
             <p class="viewFull text-right"><a href="javascript:void(0);">Expand source</a></p>
         </article>
+
+        <h3>HTML Formatting Elements</h3>
         <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
+            <ul>
+                <li>HTML also defines special elements for defining text with a special meaning&lt;</li>
+                <li>Formatting elements were designed to display special types of text:<br>
+                    <p>
+                        &lt;b&gt; - <b>Bold text</b><br>
+                        &lt;strong&gt; - <strong>Important text</strong><br>
+                            &lt;i&gt; - <i>Italic text</i><br>
+                                &lt;em&gt; - <em>Emphasized text</em><br>
+                                    &lt;mark&gt; - <mark>Marked text</mark><br>
+                                        &lt;small&gt; - <small>Small text</small><br>
+                                            &lt;del&gt; - <del>Deleted text</del><br>
+                                                &lt;ins&gt; -  <ins>Inserted text</ins><br>
+                                                    &lt;sub&gt; - Subscript <sub>text</sub><br>
+                        &lt;sup&gt; - Superscript <sup>text</sup>
+                    </p>
+                </li>
+            </ul>
         </article>
-        <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
-        </article>
+        
     </section>
+
     <section id="cssSection">
         <h2 class="ttl">CSS</h2>
         <article>
@@ -128,8 +274,47 @@
 
         </article>
     </section>
+
     <section id="javascriptSection">
         <h2 class="ttl">Javascript</h2>
+        <h3>Define</h3>
+        <article>
+            <h4>What is javascript?</h4>
+            <p><span class="text-red">JavaScript</span> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+            <h4>So what can it really do?</h4>
+            <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:</p>
+            <ul>
+                <li>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called name.</li>
+                <li>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the name variable to create the complete text label, e.g. ''Player 1: Chris".</li>
+                <li>Running code in response to certain events occurring on a web page. We used a click event in our example above to detect when the button is clicked and then run the code that updates the text label.</li>
+                <li>And much more!</li>
+            </ul>
+            <p>What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called Application Programming Interfaces (APIs) provide you with extra superpowers to use in your JavaScript code.</p>
+
+            <h4>How do you add JavaScript to your page?</h4>
+            <p>...</p>
+        </article>
+
+        <h3>JavaScript Terms</h3>
+        <article>
+            <p>Special terms are normally found in documentation and technical articles.<br> But some of them like closures are pretty standard things to know about. Knowing what the word itself means can help you know the concept it's named for better.</p>
+            <ol>
+                <li>Arity</li>
+                <li>Anonymous</li>
+                <li>Closure</li>
+                <li>Currying</li>
+                <li>Hoisting</li>
+                <li>Mutation</li>
+                <li>Pragma</li>
+                <li>Sentinel</li>
+                <li>Vanilla</li>
+                <li>Variadic</li>
+            </ol>
+        </article>
+    </section>
+
+    <section id="fqa">
+        <h2 class="ttl">FQA</h2>
         <article>
             <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
                 no. Diceret repudiandae ad nec. <br>
@@ -138,6 +323,7 @@
                 atomorum.</p>
         </article>
     </section>
+
 
 </main><!--/.site__main-->
 

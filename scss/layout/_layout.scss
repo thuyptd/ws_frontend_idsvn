@@ -5,10 +5,18 @@
 section {
   min-height: 100vh;
   padding: 20px 0;
+  max-width: 1280px;
+  margin: 0 auto;
 
   h2 {
     font-size: 48px;
     margin-top: 0;
+  }
+
+  h4 {
+    border-bottom: 2px solid $c-main;
+    padding: 5px 0;
+    margin: rem(30px) 0 rem(20px);
   }
 }
 
@@ -20,7 +28,7 @@ section {
   article {
     background-color: $c-white;
     padding: $spacer-standard;
-    @include box-shadow(0, 0, 3px, 0, rgba($c-black, 0.5));
+    @include box-shadow(0, 0, 5px, 0, rgba($c-black, 0.3));
     margin: 20px 0;
   }
 
