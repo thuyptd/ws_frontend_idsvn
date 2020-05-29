@@ -4,27 +4,21 @@
 
 section {
   min-height: 100vh;
-<<<<<<< HEAD
   padding: 20px 0;
-=======
   padding: rem(20px) 0;
   max-width: 1280px;
   margin: 0 auto;
->>>>>>> 853a648e1a2d7bc8f16cc230cbb12b4e2bd4bf07
 
   h2 {
     font-size: 48px;
     margin-top: 0;
   }
-<<<<<<< HEAD
-=======
 
   h4 {
     border-bottom: 2px solid $c-main;
     padding: rem(5px) 0;
     margin: rem(30px) 0 rem(20px);
   }
->>>>>>> 853a648e1a2d7bc8f16cc230cbb12b4e2bd4bf07
 }
 
 .site__main {
@@ -35,13 +29,10 @@ section {
   article {
     background-color: $c-white;
     padding: $spacer-standard;
-<<<<<<< HEAD
     @include box-shadow(0, 0, 3px, 0, rgba($c-black, 0.5));
     margin: 20px 0;
-=======
     margin: rem(20px) 0;
     @include box-shadow(0, 0, 5px, 0, rgba($c-black, 0.3));
->>>>>>> 853a648e1a2d7bc8f16cc230cbb12b4e2bd4bf07
   }
 
   pre {
