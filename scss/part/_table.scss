@@ -1,0 +1,23 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    padding: rem(8px) rem(10px);
+  }
+
+  th {
+    background-color: rgba($c-grey-light, 1);
+  }
+
+  &-striped {
+    tr {
+      &:nth-child(odd) {
+        td,
+        th {
+          background-color: rgba($c-grey-light, 0.75);
+        }
+      }
+    }
+  }
+}

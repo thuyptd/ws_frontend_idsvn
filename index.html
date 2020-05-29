@@ -2,52 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Frontend: Basic and tips</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!--.site__header-->
-<header class="site__header">
-
-</header><!--/.site__header-->
+<!--<header class="site__header">
+</header>--><!--/.site__header-->
 
 <!--.site__sidebar-->
 <aside class="site__sidebar">
     <h1 class="logo"><a href="https://vn.ids.jp/"><img src="img/ids.png" width="100" alt="IDS VIETNAM Logo"/></a></h1>
     <h3 class="ttl">Menu</h3>
-    <ul>
-        <li>
-            <a href="#htmlSection"><span class="fab fa-html5"></span>HTML</a>
-            <ul>
+    <ul class="menu">
+        <li class="menu__item">
+            <a href="#foreword"><img src="img/svg/home-solid.svg" alt="Foreword">Foreword</a>
+        </li>
+        <li class="menu__item">
+            <a href="#htmlSection"><img src="img/svg/html5-brands.svg" alt="html">HTML</a>
+            <ul class="menu__sub">
                 <li><a href="#">Introduce</a></li>
                 <li><a href="#">Note</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#cssSection">CSS</a>  
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+
+
+        <li class="menu__item">
+            <a href="#cssSection"><img src="img/svg/css3-alt-brands.svg" alt="Foreword">CSS</a>
+            <ul class="menu__sub">
+                <li class="menu__sub-item"><a href="#"></a></li>
+                <li class="menu__sub-item"><a href="#"></a></li>
+
             </ul>
         </li>
-        <li>
-            <a href="#javascriptSection">Javascript</a>
+        <li class="menu__item">
+            <a href="#javascriptSection"><img src="img/svg/js-brands.svg" alt="Foreword">Javascript</a>
+        </li>
+        <li class="menu__item">
+            <a href="#UIUX"><img src="img/ui.jpg" alt="Foreword">UI-UX</a>
+        </li>
+        <li class="menu__item">
+            <a href="#fqa"><img src="img/svg/question-circle-solid.svg" alt="Foreword">FQA</a>
         </li>
     </ul>
 </aside><!--/.site__sidebar-->
 
 <!--.site__main-->
 <main class="site__main">
+    <section id="foreword">
+        <h2 class="ttl">Foreword</h2>
+    </section>
+
     <section id="htmlSection">
         <h2 class="ttl">HTML</h2>
+        <h3>Introduce</h3>
         <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
-            <pre><code>&lt;!DOCTYPE HTML&gt;
+
+            <h4>Concept of HTML</h4>
+            <ul>
+                <li>HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content.</li>
+                <li>For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.</li>
+                <li>HTML5 is the latest version of HTML, the code that describes web pages. It's actually three kinds of code: HTML, which provides the structure; Cascading Style Sheets (CSS), which take care of presentation; and JavaScript, which makes things happen.</li>
+            </ul>
+
+            <h4>HTML Element</h4>
+
+            <div class="row row-revert">
+                <div class="col-6">
+                    <img src="img/html_element_1.png" alt="HTML element struct">
+                </div>
+
+                <div class="col-6">
+                    <ul>
+                        <li>The main parts of element are as follows:
+                            <ul>
+                                <li><strong>The opening tag:</strong> This consists of the name of the element (in this case, p), wrapped in opening and closing <strong>angle brackets</strong>.</li>
+                                <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. </li>
+                                <li><strong>The content:</strong> This is the content of the element, which in this case is just text.</li>
+                                <li><strong>The element:</strong> The opening tag, the closing tag, and the content together comprise the element.</li>
+                            </ul>
+                        </li>
+                        <li>The difference between start tags and end tags is that the latter includes a slash before the tag name.</li>
+                        <li>If element has no content that is called <strong>Empty Element.</strong></li>
+                        <li>HTML elements can be nested (elements can contain elements).</li>
+                        <li>Some specials elements have no the closing tag (img, hr, br, input,…)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Block level elements in HTML: A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+            <p><img src="img/html_element_2.png" alt=""></p>
+
+            <p>Inline elements in HTML:  An inline element does not start on a new line and only takes up as much width as necessary.</p>
+            <p><img src="img/html_element_3.png" alt=""></p>
+
+            <h4>HTML Element</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;article&gt;</span></td>
+                        <td>Defines an article in a document</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;aside&gt;</span></td>
+                        <td>Defines content aside from the page content</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;details&gt;</span></td>
+                        <td>Defines additional details that the user can view or hide</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;figcaption&gt;</span></td>
+                        <td>Defines a caption for a &lt;figure&gt; element</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;figure&gt;</span></td>
+                        <td>Defines self-contained content</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;footer&gt;</span></td>
+                        <td>Defines a footer for a document or section</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;header&gt;</span></td>
+                        <td>Defines a header for a document or section</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;main&gt;</span></td>
+                        <td>Defines the main content of a document</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;mark&gt;</span></td>
+                        <td>Defines marked/highlighted text</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-blue">&lt;nav&gt;</span></td>
+                        <td>Defines navigation links</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>HTML Attribute</h4>
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        <li>Attributes contain extra information about the element that you don't want to appear in the actual content.</li>
+                        <li>An attribute should always have the following:
+                            <ul>
+                                <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+                                <li>The attribute name, followed by an equals sign.</li>
+                                <li>The attribute value, wrapped by opening and closing quotation marks.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <p><img src="img/html_element_4.png" alt=""></p>
+                </div>
+            </div>
+
+            <h5>Attention</h5>
+            <h5><span class="text-red">- class</span></h5>
+            <p>The HTML class attribute is used to define equal styles for elements with the same class name.<br>
+                HTML elements can have more than one class name, each class name must be separated by a space.</p>
+
+            <h5><span class="text-red">- id</span></h5>
+            <p>The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document).</p>
+            <p><strong>Note:<br></strong>
+                - The class, id value is case-sensitive.<br>
+                - The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.)</p>
+        </article>
+
+        <h3>Anatomy of an HTML document</h3>
+        <article>
+            <ul>
+                <li>The <span class="text-red">&lt;!DOCTYPE html&gt;</span> declaration defines this document to be HTML5</li>
+                <li>The <span class="text-red">&lt;html&gt;</span> attribute  defines the language of the document</li>
+                <li>The <span class="text-red">&lt;lang&gt;</span> element is the root element of an HTML page</li>
+                <li>The <span class="text-red">&lt;meta&gt;</span> element contains meta information about the document</li>
+                <li>The <span class="text-red">&lt;charset&gt;</span> attribure defines the character set used in the document.</li>
+                <li>The <span class="text-red">UTF-8</span> (Unicode) covers almost all of the characters and symbols in the world.</li>
+                <li>The <span class="text-red">&lt;title&gt;</span> element specifies a title for the document. It is also used to describe the page when you bookmark/favourite it.</li>
+                <li>The <span class="text-red">&lt;body&gt;</span> element contains the visible page content</li>
+                <li>The <span class="text-red">&lt;h1&gt;</span>,<span class="text-red">&lt;h2&gt;</span>,...,<span class="text-red">&lt;h6&gt;</span> element defines a large heading</li>
+                <li>The <span class="text-red">&lt;p&gt;</span> element defines a paragraph</li>
+            </ul>
+
+<pre><code>&lt;!DOCTYPE HTML&gt;
+
 &lt;html&gt;
 &lt;head&gt;
     &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
@@ -95,27 +241,34 @@
 
 &lt;/body&gt;
 
-&lt;/html>
+&lt;/html&gt;
 </code></pre>
             <p class="viewFull text-right"><a href="javascript:void(0);">Expand source</a></p>
         </article>
+
+        <h3>HTML Formatting Elements</h3>
         <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
+            <ul>
+                <li>HTML also defines special&nbsp;elements&nbsp;for defining text with a special&nbsp;meaning&lt;</li>
+                <li>Formatting elements were designed to display special types of text:<br>
+                    <p>
+                        &lt;b&gt; - <b>Bold text</b><br>
+                        &lt;strong&gt; - <strong>Important text</strong><br>
+                        &lt;i&gt; - <i>Italic text</i><br>
+                        &lt;em&gt; - <em>Emphasized text</em><br>
+                        &lt;mark&gt; - <mark>Marked text</mark><br>
+                        &lt;small&gt; - <small>Small text</small><br>
+                        &lt;del&gt; - <del>Deleted text</del><br>
+                        &lt;ins&gt; - &nbsp;<ins>Inserted text</ins><br>
+                        &lt;sub&gt; - Subscript <sub>text</sub><br>
+                        &lt;sup&gt; - Superscript <sup>text</sup>
+                    </p>
+                </li>
+            </ul>
         </article>
-        <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
-        </article>
+        
     </section>
+
     <section id="cssSection">
         <h2 class="ttl">CSS</h2>
         <article>
@@ -128,17 +281,178 @@
 
         </article>
     </section>
+
     <section id="javascriptSection">
         <h2 class="ttl">Javascript</h2>
+        <h3>Define</h3>
         <article>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
+            <h4>What is javascript?</h4>
+            <p><span class="text-red">JavaScript</span> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+            <h4>So what can it really do?</h4>
+            <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:</p>
+            <ul>
+                <li>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called name.</li>
+                <li>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the name variable to create the complete text label, e.g. ''Player 1: Chris".</li>
+                <li>Running code in response to certain events occurring on a web page. We used a click event in our example above to detect when the button is clicked and then run the code that updates the text label.</li>
+                <li>And much more!</li>
+            </ul>
+            <p>What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called Application Programming Interfaces (APIs) provide you with extra superpowers to use in your JavaScript code.</p>
+
+            <h4>How do you add JavaScript to your page?</h4>
+            <p>You can include JavaScript in your HTML in two ways:</p>
+            <ul>
+                <li>Writing the code in your HTML <br>
+                <pre><code>&lt;script type="text/javascript"&gt;
+    //JavaScript goes here
+    <span class="text-red">alert</span>('I am a javascript code alert');
+&lt;/script&gt;</code></pre></li>
+                <li>Including it as a link to an external file<br>
+                <pre><code>&lt;script src="[path]/myscript.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre></li>
+            </ul>
+
+            <h4>Note</h4>
+            <h5>var vs let vs const in JavaScript</h5>
+            ES2015 (or ES6) introduced two new ways to create variables, <code>let</code> and <code>const</code>. But before we actually dive into the differences between <code>var</code>, <code>let</code>, and <code>const</code>, there are some prerequisites you need to know first. They are variable declarations vs initialization, scope (specifically function scope), and hoisting.
+
+            <h4>Script loading strategies</h4>
+            <p>A common problem is that all the HTML on a page is loaded in the order in which it appears. If you are using JavaScript to manipulate elements on the page (or more accurately, the <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#The_document_object_model">Document Object Model</a>), your code won't work if the JavaScript is loaded and parsed before the HTML.</p>
+            <p>When the browser loads HTML and comes across a &lt;script&gt;...&lt;/script&gt; tag, it can’t continue building the DOM. It must execute the script right now. The same happens for external scripts <script src="..."></script>: the browser must wait until the script downloads, execute it, and only after process the rest of the page.<br>
+
+                That leads to two important issues:<br>
+
+                Scripts can’t see DOM elements below them, so they can’t add handlers etc.<br>
+                If there’s a bulky script at the top of the page, it “blocks the page”. Users can’t see the page content till it downloads and runs:</p>
+            <h5>defer</h5>
+            <p>The <code>defer</code> attribute tells the browser that it should go on working with the page, and load the script “in background”, then run the script when it loads.</p>
+            <pre><code>&lt;script src="script.js" <span class="text-red">defer</span>&gt;&lt;/script&gt;</code></pre>
+
+            <h5>async</h5>
+            <p>The <code>async</code> attribute means that a script is completely independent:</p>
+
+            <ol>
+                <li>The page doesn’t wait for <code>async</code> scripts, the contents are processed and displayed.</li>
+                <li>Event and <code>async</code> scripts don’t wait for each other:</li>
+                <li>Event may happen both before an async script (if an async script finishes loading after the page is complete)
+                    …or after an async script (if an async script is short or was in HTTP-cache)</li>
+                <li>Other scripts don’t wait for <code>async</code> scripts, and <code>async</code> scripts don’t wait for them.</li>
+            </ol>
+            <pre><code>&lt;script src="script.js" <span class="text-red">async</span>&gt;&lt;/script&gt;</code></pre>
+
+
+
+
+        </article>
+
+
+        <h3>JavaScript Terms</h3>
+        <article>
+            <p>Special terms are normally found in documentation and technical articles.<br> But some of them like closures are pretty standard things to know about. Knowing what the word itself means can help you know the concept it's named for better.</p>
+            <ol>
+                <li>Arity</li>
+                <li>Anonymous</li>
+                <li>Closure</li>
+                <li>Currying</li>
+                <li>Hoisting</li>
+                <li>Mutation</li>
+                <li>Pragma</li>
+                <li>Sentinel</li>
+                <li>Vanilla</li>
+                <li>Variadic</li>
+            </ol>
+        </article>
+
+        <h3>Library & frameworks of javascript</h3>
+        <article>
+            <h4>The best JavaScript libraries</h4>
+            <ol>
+                <li><a href="https://community.algolia.com/places/">Jquery</a></li>
+                <li><a href="https://community.algolia.com/places/">Algolia Places</a></li>
+                <li><a href="https://www.chartjs.org/">Chart.js</a></li>
+                <li><a href="https://nosir.github.io/cleave.js/">Cleave.js</a></li>
+                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
+            </ol>
+
+            <h4>The best JavaScript libraries</h4>
+            <ol>
+                <li><a href="https://angular.io/">Angular</a></li>
+                <li><a href="https://vuejs.org/">Vue.js</a></li>
+                <li><a href="https://mochajs.org/">Mocha</a></li>
+                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
+            </ol>
+
+            <h5><a href="https://www.javascript.com/">Small game for beginner</a></h5>
+        </article>
+
+
+    </section>
+    <section id="UIUX">
+        <h2 class="ttl">UI-UX</h2>
+        <h3>Define</h3>
+        <article>
+            <h4>What is UI UX</h4>
+            <p><span class="text-red"> In the development UI UX </span> stage of an application or website, there are two nature of work: front end and back end. Front end is simply what catches the eye of the first user, such as: Image, color, typeface ... of the interface. And the back end is something that's hidden deep behind the scenes, including programming, functionality ... of a website or application.</p>
+            <h4>So what can it really do?</h4>
+            <p>In addition to Front End and Back End, we also have two other very important stages: ideation (idea creation) and testing (testing).</p>
+            <img src="./img/ui/ui-ux-1.PNG" alt="buc tranh ui ux">
+            <p>The above four stages are the core process of developing a comprehensive UI / UX experience. For example, the UI design work is in the front end, involving things that impress the first viewer, or coding (coding) is doing the work in the back. end, help an application or website really work. Testing is doing the job of a UX designer.
+
+                However, in addition to the four main stages, there are also other equally important stages, such as marketing, content dev, production ... All stages from the idea to the finished product to market, always does not work separately and is closed, but rather involves overlapping and closely linked together.</p>
+            <img src="./img/ui/ui-ux-2.PNG" alt="buc tranh ui ux-2">
+            <p>So, which stage do you feel you're most passionate about and fit into when developing an app or website? You can choose for yourself 2 to 3 areas to develop your long-term career in the future. For example, becoming a UX designer means that you enjoy researching and giving solutions to users, constantly checking the interaction between content in the product, listening to customers. Shop for useful feature updates. Or you are a person with technical knowledge of computer, want to create ideas for the product yourself and program it. It is also possible to assume that if you are a beauty lover and knowledgeable in graphic design, you can participate in positions such as UI design and coding.</p>
+            <img src="./img/ui/ui-ux-3.PNG" alt="">
+            <p>Compared to the previous 90s, in the early days of web design, a person often had to handle the entire process. You have to write content, take pictures, cum the interface design, programming and putting the website on the server. But today, the complexity of the application system or website is much more ambiguous, the number of visitors is increasing, software applications need to be updated continuously and regularly. It will be impossible in the present time for one person to be able to do all the above well, the amount of work that needs to be shared to each different department.</p>
+            <img src="./img/ui/ui-ux-4.PNG" alt="">
+            <p>The conclusion is that the process of developing a product whether in UI / UX industry or elsewhere, requires the cooperation of many different industries and skill sets. The first thing you need to do is to research and research to select the positions that make you feel comfortable and comfortable in your UI / UX development career.</p>
+                
+        </article>
+        <article>
+            <h1>Design trends in May</h1>
+            <h3>1. Asymmetrical space</h3>
+            <img src="./img/ui/khong gian bat can doi.PNG" alt="">
+            <a href="https://www.yukon1000.org/">yukon1000</a>
+            <img src="./img/ui/khong gian bat can doi-1.PNG" alt="">
+            <a href="https://www.artoftea.com/">Art of Tea</a>
+            <h3>2. Use image slider</h3>
+            <img src="./img/ui/slider hình ảnh.PNG" alt="">
+            <a href="https://wecreateclarity.com/">Clarity </a>
+            <img src="./img/ui/sliderhinhanh.PNG" alt="">
+            <a href="https://www.reviseconcept.com/">Revise </a>
+            <img src="./img/ui/sliderhinhfanh2.PNG" alt="">
+            <a href="https://www.prezman.fr/">Prezman </a>
+        </article>
+        <article>
+            <h3>Where does the "color of the year" trend come from and why is this year Classic Blue?</h3>
+            <img src="./img/ui/ui-image.PNG" alt="ui image">
+            <img src="./img/ui/color-of-the-year_2020.jpg" alt="">
+            <img src="./img/ui/id-classic-blue-3.jpg" alt="">
+            <img src="./img/ui/id-classic-blue-13.png" >
+            <img src="./img/ui/id-classic-blue-18.png" >
+            <h3>Pure round</h3>
+            <img src="./img/ui/vongthuansat.PNG" >
+            <img src="./img/ui/vongthuansac1..PNG" >
+            <h3>Color level 1</h3>
+            <img src="./img/ui/maubac1.PNG" >
+            <h3>Color level 2</h3>
+            <img src="./img/ui/maubac2.PNG" >
+            <h3>Color level 3</h3>
+            <img src="./img/ui/maubac3.PNG" >
+            <h3>Used Color level 1</h3>
+            <img src="./img/ui/2.PNG" >
+            <img src="./img/ui/dungmotmauweb.PNG" >
+            <img src="./img/ui/123.jpg" >
+            <h3>Used Color level 2 color </h3>
+            <img src="./img/ui/dung2mautuongdong.PNG" >
+            <h3>Used Color level 2 color - complementary color </h3>
+            <img src="./img/ui/maubotuccc.PNG" >
+            <img src="./img/ui/maubotucvietname.PNG" >
         </article>
     </section>
-
+    <section id="fqa">
+        <h2 class="ttl">FQA</h2>
+        <article class="text-center">
+            <p><img src="https://lh3.googleusercontent.com/proxy/x_VSL_Py0b8mReY25OGdlKLsj_HaZfsU6f0rDgtgu1bsd9LbXBEzvKZY6VUfQWW_yj_YeSPJyUR1N7mL_Luse1fyUHTkuDE" alt="Frequesntly Questions Asked"></p>
+        </article>
+    </section>
 </main><!--/.site__main-->
 
 <!--.site__footer-->
