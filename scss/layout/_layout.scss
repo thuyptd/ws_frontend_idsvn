@@ -28,7 +28,6 @@ section {
   article {
     background-color: $c-white;
     padding: $spacer-standard;
-    @include box-shadow(0, 0, 3px, 0, rgba($c-black, 0.5));
     margin: rem(20px) 0;
     @include box-shadow(0, 0, 5px, 0, rgba($c-black, 0.3));
   }
