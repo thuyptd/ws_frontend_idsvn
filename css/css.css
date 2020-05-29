@@ -35,3 +35,144 @@ table.w3-table-all {
 .w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child {
     padding-left: 16px;
 }
+
+.tabset > input[type="radio"],
+.tabset2 > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel,
+.tabset2 .tab-panel2  {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: inline-block;
+}
+
+.tabset2 > input:first-child:checked ~ .tab-panels2 > .tab-panel2:first-child,
+.tabset2 > input:nth-child(3):checked ~ .tab-panels2 > .tab-panel2:nth-child(2),
+.tabset2 > input:nth-child(5):checked ~ .tab-panels2 > .tab-panel2:nth-child(3),
+.tabset2 > input:nth-child(7):checked ~ .tab-panels2 > .tab-panel2:nth-child(4),
+.tabset2 > input:nth-child(9):checked ~ .tab-panels2 > .tab-panel2:nth-child(5),
+.tabset2 > input:nth-child(11):checked ~ .tab-panels2 > .tab-panel2:nth-child(6) {
+  display: inline-block;
+}
+
+/*
+ Styling
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+
+.tabset > label,
+.tabset2 > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  border: 0;
+  border-bottom: 0;
+  cursor: pointer;
+}
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset2 > label:hover,
+.tabset2 > input:focus + label {
+  color: #06c;
+}
+
+.tabset > input:checked + label,
+.tabset2 > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  color: #DE6113;
+}
+
+.tab-panel,
+.tab-panel2 {
+    padding: 0;
+    width: calc(var(--split-location) - 5px);
+    display: inline-block;
+    min-height: auto;
+}
+
+.tab-panel pre code,
+.tab-panel2 pre code {
+    font-size: 1em;
+    line-height: inherit;
+}
+
+.tabs,
+.tabs2 {
+    position: relative;
+    --split-location: 50.0%;
+}
+
+.tab_css_lb {
+    position: absolute;
+    left: calc(var(--split-location) - 13%);
+    margin: 0;
+    margin-left: 0;
+}
+
+.tabs pre,
+.tabs2 pre  {
+    font-size: 0.875rem;
+    padding: .75rem 1rem;
+    overflow: auto;
+    white-space: pre-line;
+    margin-top: 0;
+    min-height: 220px;
+}
+
+.tabset > label::after,
+.tabset2 > label::after {
+    bottom: -3px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-bottom-color: #EEEEEE;
+    border-width: 10px;
+    margin-left: -10px;
+    display: none;
+}
+
+.tabset > input:checked:after,
+.tabset2 > input:checked:after {
+    border-color: transparent;
+    border-bottom-color: #ebebeb;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+.tabset > input:focus + label::after, .tabset > input:checked + label::after, .tabset .tab_css_lb::after,
+.tabset2 > input:focus + label::after, .tabset2 > input:checked + label::after, .tabset2 .tab_css_lb::after {
+    display: block;
+}
+
+.tabset .tab_css,
+.tabset2 .tab_css {
+    display: block;
+    width: calc(100% - var(--split-location) - 5px);
+    float: right;
+}
+
+.tabset .tab_css_lb,
+.tabset2 .tab_css_lb  {
+    color: #DE6113;
+}

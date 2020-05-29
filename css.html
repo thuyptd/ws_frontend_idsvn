@@ -66,27 +66,27 @@
                     <th>Example description</th>
                   </tr>
                   <tr>
-                    <td><a href="/cssref/sel_class.asp">.<i>class</i></a></td>
+                    <td>.<i>class</i></td>
                     <td class="notranslate">.intro</td>
                     <td>Selects all elements with class="intro"</td>
                   </tr>
                   <tr>
-                    <td><a href="/cssref/sel_id.asp">#<i>id</i></a></td>
+                    <td>#<i>id</i></td>
                     <td class="notranslate">#firstname</td>
                     <td>Selects the element with id="firstname"</td>
                   </tr>
                   <tr>
-                    <td><a href="/cssref/sel_all.asp">*</a></td>
+                    <td>*</td>
                     <td class="notranslate">*</td>
                     <td>Selects all elements</td>
                   </tr>
                   <tr>
-                    <td><i><a href="/cssref/sel_element.asp">element</a></i></td>
+                    <td><i>element</i></td>
                     <td class="notranslate">p</td>
                     <td>Selects all &lt;p&gt; elements</td>
                   </tr>
                   <tr>
-                    <td><i><a href="/cssref/sel_element_comma.asp">element,element,..</a></i></td>
+                    <td><i>element,element,..</i></td>
                     <td class="notranslate">div, p</td>
                     <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
                   </tr>
@@ -102,21 +102,34 @@
             <p>
                 <h4>External CSS</h4>
             </p>
-            <p>
+            <!--<p>
                 <img src="img/externalcss.png" width="500">
-            </p>
+            </p>-->
+            <div>
+                <p class="codepen" data-height="251" data-theme-id="light" data-default-tab="result"  data-slug-hash="mdevzgB" style="height: 251px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="mdevzgB">
+                </p>
+            </div>
             <p>
                 <h4>Internal CSS</h4>
             </p>
-            <p>
+            <!--<p>
                 <img src="img/internalcss.png" width="500">
-            </p>
+            </p>-->
+            <div>
+                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result"  data-slug-hash="QWjYZez" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="QWjYZez">
+                </p>
+            </div>
             <p>
                 <h4>Inline CSS</h4>
             </p>
-            <p>
+            <!--<p>
                 <img src="img/inlinecss.png" width="500">
-            </p>
+            </p>-->
+            <div>
+                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result"  data-slug-hash="ExVrOaP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ExVrOaP">
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
         </article>
     </section>
     <section id="sassSection">
@@ -129,14 +142,489 @@
             <p>
                 It is a CSS pre-processor. It is an extension of CSS that is used to add power and elegance to the basic language. It facilitates you to add variables, nested rules, mixins, inline imports, inheritance and more, all with fully CSS-compatible syntax.
             </p>
-            <h3>Sass vs SCSS</h3>
+            <h3>Installation</h3>
+            <p>You can install and process Sass in a few ways, using:</p>
+            <ol>
+                <li>Official Sass which requires Ruby</li>
+                <li>Node-Sass which runs on Node.js</li>
+                <li>A GUI app such as Hammer, CodeKit, Koala, or Compass</li>
+            </ol>
+            <p>
+                You can read more about them here: sass-lang.com/install
+            </p>
+            <h3>Syntax</h3>
             <p>Sass provides two distinct syntax:</p>
             <ul>
                 <li>Sass</li>
                 <li>SCSS</li>
             </ul>
             <p>Both are similar and do same thing, but written in different style. SCSS is latest one and considered better than Sass.</p>
-            <h3>Difference between SASS and SCSS</h3>
+            <h3>Variables</h3>
+            <p>
+                Variables are a way to store information that you can re-use later.ou can store things like colors, font stacks, or any CSS value you think you'll want to reuse.Sass uses the $ symbol to make something a variable
+            </p>
+            <div class="tabs" style="">
+                <div class="tabset">
+                  <!-- Tab 1 -->
+                  <input type="radio" name="tabset" id="tab1" aria-controls="SCSS" checked>
+                  <label for="tab1">SCSS</label>
+                  <!-- Tab 2 -->
+                  <input type="radio" name="tabset" id="tab2" aria-controls="Sass">
+                  <label for="tab2">Sass</label>
+                  <!-- Tab 3 -->
+                  <input type="radio" name="tabset" id="tab3" aria-controls="CSS">
+                  <label for="tab3" class="tab_css_lb">CSS</label>
+                  
+                  <div class="tab-panels">
+                    <section id="SCSS" class="tab-panel">
+                        <pre class="highlight scss">
+                            <code><span class="nv">$font-stack</span><span class="p">:</span>    <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+                            <span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+
+                            <span class="nt">body</span> <span class="p">{</span>
+                              <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="nv">$font-stack</span><span class="p">;</span>
+                              <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+                            <span class="p">}</span>
+                            </code>
+                        </pre>
+                    </section>
+                    <section id="Sass" class="tab-panel">
+                        <pre class="highlight sass">
+                            <code><span class="nv">$font-stack</span><span class="p">:</span>    <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span>
+                            <span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span>
+
+                            <span class="nt">body</span>
+                              <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="nv">$font-stack</span>
+                              <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span>
+
+                            </code>
+                        </pre>
+                    </section>
+                    <section id="CSS" class="tab-panel tab_css">
+                        <pre class="highlight css">
+                            <code><span class="nt">body</span> <span class="p">{</span>
+                              <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+                              <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+                            <span class="p">}</span>
+                            </code>
+                        </pre>
+                    </section>
+                  </div>
+                  
+                </div>
+            </div>
+            <h3>Nesting</h3>
+            <p>
+                Sass lets you nest CSS selectors in the same way as HTML.
+            </p>
+            <div class="tabs2" style="">
+                <div class="tabset2">
+                  <!-- Tab 1 -->
+                  <input type="radio" name="tabset2" id="tab4" aria-controls="SCSS2" checked>
+                  <label for="tab4">SCSS</label>
+                  <!-- Tab 2 -->
+                  <input type="radio" name="tabset2" id="tab5" aria-controls="Sass2">
+                  <label for="tab5">Sass</label>
+                  <!-- Tab 3 -->
+                  <input type="radio" name="tabset2" id="tab6" aria-controls="CSS2">
+                  <label for="tab6" class="tab_css_lb">CSS</label>
+                  
+                  <div class="tab-panels2">
+                    <section id="SCSS2" class="tab-panel2">
+                        <pre class="highlight scss"><code><span class="nt">nav</span> <span class="p">{</span>
+                          <span class="nt">ul</span> <span class="p">{</span>
+                            <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+                            <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+                            <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                          <span class="p">}</span>
+
+                          <span class="nt">li</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span> <span class="p">}</span>
+
+                          <span class="nt">a</span> <span class="p">{</span>
+                            <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+                            <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">12px</span><span class="p">;</span>
+                            <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                          <span class="p">}</span>
+                        <span class="p">}</span>
+                        </code></pre>
+                    </section>
+                    <section id="Sass2" class="tab-panel2">
+                        <pre class="highlight sass">
+                            <code><span class="nt">nav</span>
+                              <span class="nt">ul</span>
+                                <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span>
+                                <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span>
+                                <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span>
+
+                              <span class="nt">li</span>
+                                <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span>
+
+                              <span class="nt">a</span>
+                                <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span>
+                                <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">12px</span>
+                                <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span>
+                                <span class="nt"> </span>
+                            </code>
+                        </pre>
+                    </section>
+                    <section id="CSS2" class="tab-panel2 tab_css">
+                        <pre class="highlight css"><code><span class="nt">nav</span> <span class="nt">ul</span> <span class="p">{</span>
+                          <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+                          <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+                          <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+                          <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        <span class="nt">nav</span> <span class="nt">a</span> <span class="p">{</span>
+                          <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+                          <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">12px</span><span class="p">;</span>
+                          <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+
+                        </code></pre>
+                    </section>
+                  </div>
+                  
+                </div>
+            </div>
+            <h3>Mixins</h3>
+            <p>
+                The @mixin directive lets you create CSS code that is to be reused throughout the website.
+            </p>
+            <div class="tabs2" style="">
+                <div class="tabset2">
+                  <!-- Tab 1 -->
+                  <input type="radio" name="tabset3" id="tab7" aria-controls="SCSS" checked>
+                  <label for="tab7">SCSS</label>
+                  <!-- Tab 2 -->
+                  <input type="radio" name="tabset3" id="tab8" aria-controls="Sass">
+                  <label for="tab8">Sass</label>
+                  <!-- Tab 3 -->
+                  <input type="radio" name="tabset3" id="tab9" aria-controls="CSS">
+                  <label for="tab9" class="tab_css_lb">CSS</label>
+                  
+                  <div class="tab-panels2">
+                    <section id="SCSS" class="tab-panel2">
+                        <pre class="highlight scss"><code><span class="k">@mixin</span> <span class="nf">transform</span><span class="p">(</span><span class="nv">$property</span><span class="p">)</span> <span class="p">{</span>
+                          <span class="na">-webkit-transform</span><span class="p">:</span> <span class="nv">$property</span><span class="p">;</span>
+                          <span class="na">-ms-transform</span><span class="p">:</span> <span class="nv">$property</span><span class="p">;</span>
+                          <span class="nl">transform</span><span class="p">:</span> <span class="nv">$property</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        <span class="nc">.box</span> <span class="p">{</span> <span class="k">@include</span> <span class="nd">transform</span><span class="p">(</span><span class="nf">rotate</span><span class="p">(</span><span class="m">30deg</span><span class="p">));</span> <span class="p">}</span>
+                        </code></pre>
+                    </section>
+                    <section id="Sass" class="tab-panel2">
+                        <pre class="highlight sass"><code><span class="nf">=transform</span><span class="p">(</span><span class="nv">$property</span><span class="p">)</span>
+                          <span class="na">-webkit-transform</span><span class="p">:</span> <span class="nv">$property</span>
+                          <span class="na">-ms-transform</span><span class="p">:</span> <span class="nv">$property</span>
+                          <span class="nl">transform</span><span class="p">:</span> <span class="nv">$property</span>
+                        <span class="nc">.box</span>
+                          <span class="nd">+transform</span><span class="p">(</span><span class="nf">rotate</span><span class="p">(</span><span class="m">30deg</span><span class="p">))</span>
+                        </code></pre>
+                    </section>
+                    <section id="CSS" class="tab-panel2 tab_css">
+                        <pre class="highlight css"><code><span class="nc">.box</span> <span class="p">{</span>
+                          <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">30deg</span><span class="p">);</span>
+                          <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">30deg</span><span class="p">);</span>
+                          <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">30deg</span><span class="p">);</span>
+                        <span class="p">}</span>
+
+                        </code></pre>
+                    </section>
+                  </div>
+                  
+                </div>
+            </div>
+            <h3>Extend/Inheritance</h3>
+            <p>
+                The @extend directive lets you share a set of CSS properties from one selector to another.
+            </p>
+            <p>
+                The @extend directive is useful if you have almost identically styled elements that only differ in some small details.
+            </p>
+            <div class="tabs2" style="">
+                <div class="tabset2">
+                  <!-- Tab 1 -->
+                  <input type="radio" name="tabset4" id="tab10" aria-controls="SCSS" checked>
+                  <label for="tab10">SCSS</label>
+                  <!-- Tab 2 -->
+                  <input type="radio" name="tabset4" id="tab11" aria-controls="Sass">
+                  <label for="tab11">Sass</label>
+                  <!-- Tab 3 -->
+                  <input type="radio" name="tabset4" id="tab12" aria-controls="CSS">
+                  <label for="tab12" class="tab_css_lb">CSS</label>
+                  
+                  <div class="tab-panels2">
+                    <section id="SCSS" class="tab-panel2">
+                        <pre class="highlight scss"><code><span class="cm">/* This CSS will print because %message-shared is extended. */</span>
+                        <span class="nv">%message-shared</span> <span class="p">{</span>
+                          <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+                          <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+                          <span class="nl">color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="c1">// This CSS won't print because %equal-heights is never extended.
+                        </span><span class="nv">%equal-heights</span> <span class="p">{</span>
+                          <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+                          <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.message</span> <span class="p">{</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.success</span> <span class="p">{</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span><span class="p">;</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.error</span> <span class="p">{</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span><span class="p">;</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.warning</span> <span class="p">{</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span><span class="p">;</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        </code></pre>
+                    </section>
+                    <section id="Sass" class="tab-panel2">
+                        <pre class="highlight sass"><code><span class="cm">/* This CSS will print because %message-shared is extended. */
+                        </span><span class="nv">%message-shared</span>
+                          <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ccc</span>
+                          <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span>
+                          <span class="nl">color</span><span class="p">:</span> <span class="mh">#333</span>
+
+
+                        <span class="c1">// This CSS won't print because %equal-heights is never extended.
+                        </span><span class="nv">%equal-heights</span>
+                          <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span>
+                          <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span>
+
+
+                        <span class="nc">.message</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span>
+
+
+                        <span class="nc">.success</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span>
+
+
+                        <span class="nc">.error</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">red</span>
+
+
+                        <span class="nc">.warning</span>
+                          <span class="k">@extend</span> <span class="nv">%message-shared</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">yellow</span>
+
+                        </code></pre>
+                    </section>
+                    <section id="CSS" class="tab-panel2 tab_css">
+                        <pre class="highlight css"><code><span class="c">/* This CSS will print because %message-shared is extended. */</span>
+                        <span class="nc">.message</span><span class="o">,</span> <span class="nc">.success</span><span class="o">,</span> <span class="nc">.error</span><span class="o">,</span> <span class="nc">.warning</span> <span class="p">{</span>
+                          <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+                          <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+                          <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.success</span> <span class="p">{</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.error</span> <span class="p">{</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nc">.warning</span> <span class="p">{</span>
+                          <span class="nl">border-color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        <span> </span>
+                        <span>  </span>
+                        </code></pre>
+                    </section>
+                  </div>
+                  
+                </div>
+            </div>
+            <h3>Operators</h3>
+            <h4>Arithmetic Operators</h4>
+            <p>
+                Here are the arithmetic operators that Sass supports:
+            </p>
+            <div>
+                <table class="w3-table-all notranslate">
+                    <thead><tr><th style="text-align: center">Operator</th>
+                    <th style="text-align: center">Description</th>
+                    </tr></thead><tbody><tr><td style="text-align: center">+</td>
+                    <td style="text-align: center">Addition</td>
+                    </tr><tr><td style="text-align: center">–</td>
+                    <td style="text-align: center">Subtraction</td>
+                    </tr><tr><td style="text-align: center">*</td>
+                    <td style="text-align: center">Multiplication</td>
+                    </tr><tr><td style="text-align: center">/</td>
+                    <td style="text-align: center">Division</td>
+                    </tr><tr><td style="text-align: center">%</td>
+                    <td style="text-align: center">Remainder</td>
+                    </tr></tbody>
+                </table>
+            </div>
+            <h4>Equality Operators</h4>
+            <p>
+                Sass supports the following equality operators:
+            </p>
+            <div>
+                <table class="w3-table-all notranslate">
+                    <thead><tr><th style="text-align: center">Operator</th>
+                    <th style="text-align: center">Description</th>
+                    </tr></thead><tbody><tr><td style="text-align: center">==</td>
+                    <td style="text-align: center">Equal to</td>
+                    </tr><tr><td style="text-align: center">!=</td>
+                    <td style="text-align: center">Not equal to</td>
+                    </tr></tbody>
+                </table>
+            </div>
+            <h4>Comparison Operators</h4>
+            <p>
+                Sass supports the following comparison operators:
+            </p>
+            <div>
+                <table class="w3-table-all notranslate">
+                    <thead><tr><th style="text-align: center">Operator</th>
+                    <th style="text-align: center">Description</th>
+                    </tr></thead><tbody><tr><td style="text-align: center">&gt;</td>
+                    <td style="text-align: center">Greater than</td>
+                    </tr><tr><td style="text-align: center">&gt;=</td>
+                    <td style="text-align: center">Greater than or equal to</td>
+                    </tr><tr><td style="text-align: center"><
+                    </td>
+                    <td style="text-align: center">Less than</td>
+                    </tr><tr><td style="text-align: center"><=
+                    </td>
+                    <td style="text-align: center">Less than or equal to</td>
+                    </tr></tbody>
+                </table>
+            </div>
+            <h4>Logical Operators</h4>
+            <p>
+                Sass supports the following logical operators:
+            </p>
+            <div>
+                <table class="w3-table-all notranslate">
+                    <thead><tr><th style="text-align: center">Operator</th>
+                    <th style="text-align: center">Conditions</th>
+                    <th style="text-align: center">Description</th>
+                    </tr></thead><tbody><tr><td style="text-align: center">and</td>
+                    <td style="text-align: center">x and y</td>
+                    <td style="text-align: center"><code>true</code> if both x and y are <code>true</code></td>
+                    </tr><tr><td style="text-align: center">or</td>
+                    <td style="text-align: center">x or y</td>
+                    <td style="text-align: center"><code>true</code> if either x or y is <code>true</code></td>
+                    </tr><tr><td style="text-align: center">not</td>
+                    <td style="text-align: center">x</td>
+                    <td style="text-align: center"><code>true</code> if x is not <code>true</code></td>
+                    </tr></tbody>
+                </table>
+            </div>
+            <h4>String Operators</h4>
+            <ul>
+                <li>
+                    <expression> + <expression> returns a string that contains both expressions’ values. If the either value is a quoted string, the result will be quoted; otherwise, it will be unquoted.
+                </li>
+                <li>
+                    <expression> / <expression> returns an unquoted string that contains both expressions’ values, separated by /.
+                </li>
+                <li>
+                    <expression> - <expression> returns an unquoted string that contains both expressions’ values, separated by -. This is a legacy operator, and interpolation should generally be used instead.
+                </li>
+            </ul>
+            <p>
+                Look at the following example:
+            </p>
+            <div class="tabs2" style="">
+                <div class="tabset2">
+                  <!-- Tab 1 -->
+                  <input type="radio" name="tabset5" id="tab12" aria-controls="SCSS" checked>
+                  <label for="tab12">SCSS</label>
+                  <!-- Tab 2 -->
+                  <input type="radio" name="tabset5" id="tab13" aria-controls="Sass">
+                  <label for="tab13">Sass</label>
+                  <!-- Tab 3 -->
+                  <input type="radio" name="tabset5" id="tab14" aria-controls="CSS">
+                  <label for="tab14" class="tab_css_lb">CSS</label>
+                  
+                  <div class="tab-panels2">
+                    <section id="SCSS2" class="tab-panel2">
+                        <pre class="highlight scss"><code><span class="nc">.container</span> <span class="p">{</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nt">article</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"main"</span><span class="o">]</span> <span class="p">{</span>
+                          <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">600px</span> <span class="o">/</span> <span class="m">960px</span> <span class="o">*</span> <span class="m">100%</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nt">aside</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"complementary"</span><span class="o">]</span> <span class="p">{</span>
+                          <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span> <span class="o">/</span> <span class="m">960px</span> <span class="o">*</span> <span class="m">100%</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        </code></pre>
+                    </section>
+                    <section id="Sass2" class="tab-panel2">
+                        <pre class="highlight sass"><code><span class="nc">.container</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+
+
+                        <span class="nt">article</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"main"</span><span class="o">]</span>
+                          <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">600px</span> <span class="o">/</span> <span class="m">960px</span> <span class="o">*</span> <span class="m">100%</span>
+
+
+                        <span class="nt">aside</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s2">"complementary"</span><span class="o">]</span>
+                          <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span> <span class="o">/</span> <span class="m">960px</span> <span class="o">*</span> <span class="m">100%</span>
+
+                        </code></pre>
+                    </section>
+                    <section id="CSS2" class="tab-panel2 tab_css">
+                        <pre class="highlight css"><code><span class="nc">.container</span> <span class="p">{</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nt">article</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s1">"main"</span><span class="o">]</span> <span class="p">{</span>
+                          <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">62.5%</span><span class="p">;</span>
+                        <span class="p">}</span>
+
+                        <span class="nt">aside</span><span class="o">[</span><span class="nt">role</span><span class="o">=</span><span class="s1">"complementary"</span><span class="o">]</span> <span class="p">{</span>
+                          <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+                          <span class="nl">width</span><span class="p">:</span> <span class="m">31.25%</span><span class="p">;</span>
+                        <span class="p">}</span>
+                        </code></pre>
+                    </section>
+                  </div>
+                  
+                </div>
+            </div>
+            <h3>CSS tricks</h3>
+            <p>
+                Updating...
+            </p>
+            <h3>Reference</h3>
+            <p>
+                https://www.w3schools.com/css/default.asp
+            </p>
+            <p>
+                https://www.tutorialspoint.com/css/
+            </p>
+            <p>
+                https://sass-lang.com/guide
+            </p>
         </article>
     </section>
 
