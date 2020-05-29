@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Frontend: Basic and tips</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -249,18 +249,23 @@
 
         <h3>HTML Formatting Elements</h3>
         <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea.</p>
-        </article>
-        <article>
-            <h3>Id vel quas prompta deseruisse</h3>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
+            <ul>
+                <li>HTML also defines special&nbsp;elements&nbsp;for defining text with a special&nbsp;meaning&lt;</li>
+                <li>Formatting elements were designed to display special types of text:<br>
+                    <p>
+                        &lt;b&gt; - <b>Bold text</b><br>
+                        &lt;strong&gt; - <strong>Important text</strong><br>
+                        &lt;i&gt; - <i>Italic text</i><br>
+                        &lt;em&gt; - <em>Emphasized text</em><br>
+                        &lt;mark&gt; - <mark>Marked text</mark><br>
+                        &lt;small&gt; - <small>Small text</small><br>
+                        &lt;del&gt; - <del>Deleted text</del><br>
+                        &lt;ins&gt; - &nbsp;<ins>Inserted text</ins><br>
+                        &lt;sub&gt; - Subscript <sub>text</sub><br>
+                        &lt;sup&gt; - Superscript <sup>text</sup>
+                    </p>
+                </li>
+            </ul>
         </article>
         
     </section>
@@ -295,8 +300,50 @@
             <p>What is even more exciting however is the functionality built on top of the client-side JavaScript language. So-called Application Programming Interfaces (APIs) provide you with extra superpowers to use in your JavaScript code.</p>
 
             <h4>How do you add JavaScript to your page?</h4>
-            <p>...</p>
+            <p>You can include JavaScript in your HTML in two ways:</p>
+            <ul>
+                <li>Writing the code in your HTML <br>
+                <pre><code>&lt;script type="text/javascript"&gt;
+    //JavaScript goes here
+    <span class="text-red">alert</span>('I am a javascript code alert');
+&lt;/script&gt;</code></pre></li>
+                <li>Including it as a link to an external file<br>
+                <pre><code>&lt;script src="[path]/myscript.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre></li>
+            </ul>
+
+            <h4>Note</h4>
+            <h5>var vs let vs const in JavaScript</h5>
+            ES2015 (or ES6) introduced two new ways to create variables, <code>let</code> and <code>const</code>. But before we actually dive into the differences between <code>var</code>, <code>let</code>, and <code>const</code>, there are some prerequisites you need to know first. They are variable declarations vs initialization, scope (specifically function scope), and hoisting.
+
+            <h4>Script loading strategies</h4>
+            <p>A common problem is that all the HTML on a page is loaded in the order in which it appears. If you are using JavaScript to manipulate elements on the page (or more accurately, the <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#The_document_object_model">Document Object Model</a>), your code won't work if the JavaScript is loaded and parsed before the HTML.</p>
+            <p>When the browser loads HTML and comes across a &lt;script&gt;...&lt;/script&gt; tag, it can’t continue building the DOM. It must execute the script right now. The same happens for external scripts <script src="..."></script>: the browser must wait until the script downloads, execute it, and only after process the rest of the page.<br>
+
+                That leads to two important issues:<br>
+
+                Scripts can’t see DOM elements below them, so they can’t add handlers etc.<br>
+                If there’s a bulky script at the top of the page, it “blocks the page”. Users can’t see the page content till it downloads and runs:</p>
+            <h5>defer</h5>
+            <p>The <code>defer</code> attribute tells the browser that it should go on working with the page, and load the script “in background”, then run the script when it loads.</p>
+            <pre><code>&lt;script src="script.js" <span class="text-red">defer</span>&gt;&lt;/script&gt;</code></pre>
+
+            <h5>async</h5>
+            <p>The <code>async</code> attribute means that a script is completely independent:</p>
+
+            <ol>
+                <li>The page doesn’t wait for <code>async</code> scripts, the contents are processed and displayed.</li>
+                <li>Event and <code>async</code> scripts don’t wait for each other:</li>
+                <li>Event may happen both before an async script (if an async script finishes loading after the page is complete)
+                    …or after an async script (if an async script is short or was in HTTP-cache)</li>
+                <li>Other scripts don’t wait for <code>async</code> scripts, and <code>async</code> scripts don’t wait for them.</li>
+            </ol>
+            <pre><code>&lt;script src="script.js" <span class="text-red">async</span>&gt;&lt;/script&gt;</code></pre>
+
+
+
+
         </article>
+
 
         <h3>JavaScript Terms</h3>
         <article>
@@ -314,6 +361,30 @@
                 <li>Variadic</li>
             </ol>
         </article>
+
+        <h3>Library & frameworks of javascript</h3>
+        <article>
+            <h4>The best JavaScript libraries</h4>
+            <ol>
+                <li><a href="https://community.algolia.com/places/">Jquery</a></li>
+                <li><a href="https://community.algolia.com/places/">Algolia Places</a></li>
+                <li><a href="https://www.chartjs.org/">Chart.js</a></li>
+                <li><a href="https://nosir.github.io/cleave.js/">Cleave.js</a></li>
+                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
+            </ol>
+
+            <h4>The best JavaScript libraries</h4>
+            <ol>
+                <li><a href="https://angular.io/">Angular</a></li>
+                <li><a href="https://vuejs.org/">Vue.js</a></li>
+                <li><a href="https://mochajs.org/">Mocha</a></li>
+                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
+            </ol>
+
+            <h5><a href="https://www.javascript.com/">Small game for beginner</a></h5>
+        </article>
+
+
     </section>
     <section id="UIUX">
         <h2 class="ttl">UI-UX</h2>
@@ -379,12 +450,8 @@
     </section>
     <section id="fqa">
         <h2 class="ttl">FQA</h2>
-        <article>
-            <p>Lorem ipsum dolor sit amet, cu sit accusam probatus, usu eu quas mundi fabellas, facete persequeris duo
-                no. Diceret repudiandae ad nec. <br>
-                Id vel quas prompta deseruisse, at amet lucilius mea. Viris urbanitas mea cu, ancillae cotidieque
-                conclusionemque at vel. Munere voluptatibus et ius, ei nam antiopam inimicus, ut est case bonorum
-                atomorum.</p>
+        <article class="text-center">
+            <p><img src="https://lh3.googleusercontent.com/proxy/x_VSL_Py0b8mReY25OGdlKLsj_HaZfsU6f0rDgtgu1bsd9LbXBEzvKZY6VUfQWW_yj_YeSPJyUR1N7mL_Luse1fyUHTkuDE" alt="Frequesntly Questions Asked"></p>
         </article>
     </section>
 </main><!--/.site__main-->
