@@ -10,5 +10,23 @@
 
   ul {
     padding-left: $spacer-standard;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.menu {
+  padding: 0;
+  li {
+    padding: 5px 0;
+    img {
+      max-width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  &__sub {
+    padding: 0 0 0 40px;
   }
 }

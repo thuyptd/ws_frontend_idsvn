@@ -7,7 +7,6 @@ $(function () {
         if ($this.hasClass('expand')) {
             $this.removeClass('expand');
             pre.css('max-height', 500);
-            console.log(scrollPos);
             $(window).scrollTop(scrollPos);
         } else {
             $this.addClass('expand');
