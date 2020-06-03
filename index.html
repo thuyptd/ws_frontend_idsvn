@@ -73,38 +73,31 @@
 
             <!--Image Element-->
             <h5>1. Image Element</h5>
-            <p><mark>Image maps</mark></p>
+
             <div class="tab-panels">
                 <section class="tab-panel">
+                    <p><mark>Image maps</mark></p>
+                    <p><img src="img/html_image_map.jpg" usemap="#workmap" alt="Digital tech" height="300" /></p>
+                    <map name="workmap">
+                        <area shape="rect" coords="28,34,218,278" alt="Computer" target="_blank" href="computer.htm">
+                        <area shape="rect" coords="230,135,265,202" alt="Phone" target="_blank" href="phone.htm">
+                        <area shape="circle" coords="270,238,36" alt="Cup of coffee" target="_blank" href="coffee.htm">
+                    </map>
                     <pre><code>&lt;img src="img/html_image_map.jpg" alt="Digital tech" /&gt;
   &lt;map name="workmap"&gt;
-  &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
-  &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
-  &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt;
+  &lt;area shape="rect" coords="28,34,218,278" alt="Computer" href="computer.htm"&gt;
+  &lt;area shape="rect" coords="230,135,265,205" alt="Phone" href="phone.htm"&gt;
+  &lt;area shape="circle" coords="270,238,36" alt="Cup of coffee" href="coffee.htm"&gt;
 &lt;/map&gt;
-
                     </code></pre>
                 </section>
                 <section class="tab-panel">
-                    <img src="img/html_image_map.jpg" usemap="#workmap" alt="Digital tech" />
-                    <map name="workmap">
-                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-                        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-                        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-                    </map>
-                </section>
-            </div>
-
-            <p><mark>Picture</mark></p>
-            <div class="tab-panels">
-                <section class="tab-panel">
+                    <p><mark>Picture</mark></p>
                     <a href="html/picture.html"><picture>
                         <source media="(min-width: 1024px)" srcset="img/picture/2.jpg">
                         <source media="(min-width: 768px)" srcset="img/picture/3.jpg">
-                        <img src="img/picture/1.jpg" alt="Picture">
+                        <img src="img/picture/1.jpg" alt="Picture" height="300">
                     </picture></a>
-                </section>
-                <section class="tab-panel">
                     <pre><code>&lt;picture&gt;
   &lt;source media="(min-width: 1024px)" srcset="img/picture/2.jpg"&gt;
   &lt;source media="(min-width: 768px)" srcset="img/picture/3.jpg"&gt;
@@ -112,6 +105,16 @@
 &lt;/picture&gt;
 
                     </code></pre>
+                </section>
+            </div>
+
+
+            <div class="tab-panels">
+                <section class="tab-panel">
+
+                </section>
+                <section class="tab-panel">
+
                 </section>
 
             </div>
@@ -161,14 +164,14 @@
   &lt;dt&gt;Admin&lt;/dt&gt;
   &lt;dd&gt;--Human management&lt;/dd&gt;
   &lt;dt&gt;Tester&lt;/dt&gt;
-  &lt;dd&gt;Product Quality Management&lt;/dd&gt;
+  &lt;dd&gt;--Product Quality Management&lt;/dd&gt;
   &lt;dt&gt;Developer&lt;/dt&gt;
-  &lt;dd&gt;Create a product&lt;/dd&gt;
+  &lt;dd&gt;--Create a product&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
                 </section>
                 <section class="tab-panel">
                     <dl>
-                        <dt>Admin</dt>
+                        <dt><dfn>Admin</dfn></dt>
                         <dd>--Human management</dd>
                         <dt>Tester</dt>
                         <dd>--Product Quality Management</dd>
@@ -334,7 +337,7 @@
             <h4>4. Use Heading Elements Wisely</h4>
 
             <h4>5. Use the Right HTML Element at the Right Place</h4>
-            <p>Use <code>&lt;em&gt;</code> for emphasis and &lt;strong&gt; for heavy emphasis, instead of &lt;i&gt; or &lt;b&gt; (which are deprecated).</p>
+            <p>Use <code>&lt;em&gt;</code> for emphasis and &lt;strong&gt; for heavy emphasis, instead of &lt;i&gt; or &lt;b&gt;.</p>
 
             <h4>6. Input suggestions</h4>
             <input type="text" list="text_editors" />
@@ -369,15 +372,6 @@
 &lt;/div&gt;</code></pre>
                 </section>
             </div>
-
-            <h4>9. The Image map</h4>
-            <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
-
-            <map name="workmap">
-                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-            </map>
         </article>
     </section>
 
@@ -1231,7 +1225,7 @@
             <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:</p>
             <ul>
                 <li>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered then store that name in a variable called name.</li>
-                <li>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the name variable to create the complete text label, e.g. ''Player 1: Chris".</li>
+                <li>Operations on pieces of text (known as "strings" in programming).</li>
                 <li>Running code in response to certain events occurring on a web page. We used a click event in our example above to detect when the button is clicked and then run the code that updates the text label.</li>
                 <li>And much more!</li>
             </ul>
@@ -1252,6 +1246,9 @@
             <h4>Note</h4>
             <h5>var vs let vs const in JavaScript</h5>
             <p>ES2015 (or ES6) introduced two new ways to create variables, <code>let</code> and <code>const</code>. But before we actually dive into the differences between <code>var</code>, <code>let</code>, and <code>const</code>, there are some prerequisites you need to know first. They are variable declarations vs initialization, scope (specifically function scope), and hoisting.</p>
+            <p><span class="text-red">`const`</span> is a signal that the identifier won’t be reassigned.</p>
+            <p><span class="text-red">`let`</span> is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.</p>
+            <p><span class="text-red">`var`</span> is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.</p>
 
             <h4>Script loading strategies</h4>
             <p>A common problem is that all the HTML on a page is loaded in the order in which it appears. If you are using JavaScript to manipulate elements on the page (or more accurately, the <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#The_document_object_model">Document Object Model</a>), your code won't work if the JavaScript is loaded and parsed before the HTML.</p>
@@ -1285,6 +1282,32 @@
 
         <h3>JavaScript Terms</h3>
         <article>
+            <h4>1. var</h4>
+            <p>Definition: This is the most common way to create a variable in JavaScript.</p>
+
+            <p>Why var is important: Variables are how we store data in memory. Variables give us the ability to keep track of all of the data for our application. Variables are nouns. They are how we define the things that we work with in our code.</p>
+
+            <h4>2. function</h4>
+            <p>Definition: This keyword allows us to define our own functions in JavaScript.</p>
+
+            <p>Why function is important: While JavaScript provides us with a rich library of available functions, when you are building an application there are going to be custom actions that you will want to make. If variables are nouns, functions are verbs. They do things, they take action.</p>
+
+            <h4>3. Conditional</h4>
+            <p>Definition: A conditional statement is of the if-then format, and allows an application to decide between one or more courses of action, based on whether a particular condition is true. Conditional statements use what is called boolean logic to determine what to do. Boolean logic is based on looking at if a statement is true, or if it is false. We use this all the time in our everyday world. “If it is raining, take an umbrella,” is an example of a conditional statement.</p>
+
+            <p>Why it is important: A conditional statement is the primary tool used by programming languages to make logical decisions. Without oversimplifying, this is the workhorse of every application and every decision that an application makes.</p>
+
+            <h4>4. Loop</h4>
+            <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)</p>
+
+            <p>The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.</p>
+
+            <h4>5. Object</h4>
+            <p>Definition: An object is the basic data structure in JavaScript. Objects have properties, also known as keys, to which are assigned values. The value can be a number, a string, an array, a function, or even another object! This allows you to build complex, but easy to use data structures.</p>
+
+            <p>Why it is important: The data structures represented by an object quite often model something in the real world. Let’s take the idea of a User for instance. A User would have a number of properties, such as e-mail address, username, password, and whether or not they are an administrator. I probably would have a function to reset my user’s password, as an example. A player in a game would have a score, a number of lives, etc. If I were a restaurant, I might have customers and transactions as the types of objects I need to represent in my code.</p>
+
+            <!--<h3>Advance</h3>
             <p>Special terms are normally found in documentation and technical articles.<br> But some of them like closures are pretty standard things to know about. Knowing what the word itself means can help you know the concept it's named for better.</p>
             <ol>
                 <li>Arity</li>
@@ -1297,7 +1320,7 @@
                 <li>Sentinel</li>
                 <li>Vanilla</li>
                 <li>Variadic</li>
-            </ol>
+            </ol>-->
         </article>
 
         <h3>Library & frameworks of javascript</h3>
