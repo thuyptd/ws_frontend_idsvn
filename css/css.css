@@ -72,6 +72,7 @@ body {
   font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
   color: #333;
   font-weight: 300;
+    --split-location: 50.0%;
 }
 
 .tabset > label,
@@ -93,7 +94,7 @@ body {
 .tabset > input:checked + label,
 .tabset2 > input:checked + label {
   border-color: #ccc;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #282b2e;
   margin-bottom: -1px;
   color: #DE6113;
 }
@@ -104,6 +105,7 @@ body {
     width: calc(var(--split-location) - 5px);
     display: inline-block;
     min-height: auto;
+    vertical-align: top;
 }
 
 .tab-panel pre code,
@@ -115,7 +117,6 @@ body {
 .tabs,
 .tabs2 {
     position: relative;
-    --split-location: 50.0%;
 }
 
 .tab_css_lb {
@@ -146,7 +147,7 @@ body {
     position: absolute;
     pointer-events: none;
     border-color: transparent;
-    border-bottom-color: #EEEEEE;
+    border-bottom-color: #282b2e;
     border-width: 10px;
     margin-left: -10px;
     display: none;
