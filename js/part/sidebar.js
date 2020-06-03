@@ -11,10 +11,10 @@ document.write('<aside class="site__sidebar">\n' +
     '        </li>\n' +
     '        <li class="menu__item">\n' +
     '            <a href="#htmlSection"><img src="'+ path_image +'img/svg/html5-brands.svg" alt="html">HTML</a>\n' +
-    '            <ul class="menu__sub">\n' +
+    /*'            <ul class="menu__sub">\n' +
     '                <li><a href="#">Introduce</a></li>\n' +
     '                <li><a href="#">Note</a></li>\n' +
-    '            </ul>\n' +
+    '            </ul>\n' +*/
     '        </li>\n' +
     '\n' +
     '\n' +
