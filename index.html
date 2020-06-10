@@ -5,15 +5,11 @@
     <title>Frontend: Basic and tips</title>
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/style.css">
-<<<<<<< Updated upstream
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="js/script.js"></script>
     <script>
         var path_image = '';
     </script>
-=======
-   
->>>>>>> Stashed changes
 </head>
 <body>
 <!--.site__header-->
@@ -25,12 +21,77 @@
 
 <!--.site__main-->
 <main class="site__main">
+    <ul class="menu">
+        <li class="menu__item">
+            <a href="#foreword"><img src="img/svg/home-solid.svg" alt="Foreword">Foreword</a>
+        </li>
+        <li class="menu__item">
+            <a href="#htmlSection"><img src="img/svg/html5-brands.svg" alt="html">HTML</a>
+        </li>
+
+
+        <li class="menu__item">
+            <a href="#cssSection"><img src="img/svg/css3-alt-brands.svg" alt="Foreword">CSS</a>
+            <ul class="menu__sub">
+                <li class="menu__sub-item"><a href="#"></a></li>
+                <li class="menu__sub-item"><a href="#"></a></li>
+
+            </ul>
+        </li>
+        <li class="menu__item">
+            <a href="#javascriptSection"><img src="img/svg/js-brands.svg" alt="Foreword">Javascript</a>
+        </li>
+        <li class="menu__item">
+            <a href="#UIUX"><img src="img/ui.jpg" alt="Foreword">UI-UX</a>
+        </li>
+        <li class="menu__item">
+            <a href="#fqa"><img src="img/svg/question-circle-solid.svg" alt="Foreword">FQA</a>
+        </li>
+    </ul>
     <section id="foreword">
         <h2 class="ttl">Foreword</h2>
+        <dl>
+            <dt><a href="#htmlSection">A. HTML</a></dt>
+            <dd>
+                <ol>
+                    <li>Introduction and some key concepts</li>
+                    <li>Anatomy of an HTML document</li>
+                    <li>HTML Formatting Elements</li>
+                    <li>Tips for you</li>
+                </ol>
+            </dd>
+
+            <dt><a href="#cssSection">B. CSS</a></dt>
+            <dd>
+                <ol>
+                    <li>Introduction and some key concepts</li>
+                    <li>SASS and SCSS</li>
+                    <li>Library popular</li>
+                </ol>
+            </dd>
+
+            <dt><a href="#javascriptSection">C. Javascript</a></dt>
+            <dd>
+                <ol>
+                    <li>Define</li>
+                    <li>JavaScript Terms</li>
+                    <li>Library & frameworks of javascript</li>
+                    <li>Tips for you</li>
+                </ol>
+            </dd>
+
+            <dt><a href="#uiuxSection">D. UI-UX</a></dt>
+            <dd>
+                <ol>
+                    <li>Define</li>
+                    <li>Design trends in May</li>
+                </ol>
+            </dd>
+        </dl>
     </section>
 
     <section id="htmlSection">
-        <h2 class="ttl">HTML</h2>
+        <h2 class="ttl">A. HTML</h2>
         <h3>Introduce</h3>
         <article>
             <h4>Concept of HTML</h4>
@@ -1307,6 +1368,8 @@
 
             <p>Why it is important: The data structures represented by an object quite often model something in the real world. Let’s take the idea of a User for instance. A User would have a number of properties, such as e-mail address, username, password, and whether or not they are an administrator. I probably would have a function to reset my user’s password, as an example. A player in a game would have a score, a number of lives, etc. If I were a restaurant, I might have customers and transactions as the types of objects I need to represent in my code.</p>
 
+            <h4>6. Library vs. Framework</h4>
+            <p>Both frameworks and libraries are code written by someone else that is used to help solve common problems.</p>
             <!--<h3>Advance</h3>
             <p>Special terms are normally found in documentation and technical articles.<br> But some of them like closures are pretty standard things to know about. Knowing what the word itself means can help you know the concept it's named for better.</p>
             <ol>
@@ -1334,7 +1397,7 @@
                 <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
             </ol>
 
-            <h4>The best JavaScript libraries</h4>
+            <h4>The best JavaScript frameworks</h4>
             <ol>
                 <li><a href="https://angular.io/">Angular</a></li>
                 <li><a href="https://vuejs.org/">Vue.js</a></li>
@@ -1436,7 +1499,7 @@ console.log(numbers);
 
     </section>
 
-    <section id="UIUX">
+    <section id="uiuxSection">
         <h2 class="ttl">UI-UX</h2>
         <h3>Define</h3>
         <article>

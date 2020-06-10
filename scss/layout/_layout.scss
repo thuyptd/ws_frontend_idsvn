@@ -24,11 +24,14 @@ section {
 }
 
 .site__main {
-  padding: $spacer-standard $spacer-standard $spacer-standard $w-sidebar + $spacer-standard;
+  padding: $spacer-standard;
   transition: all 0.3s ease;
   @include bgCrossDot(109px, $c-grey-light, $c-grey-light);
   background-attachment: fixed;
 
+  .sidebar-open & {
+    padding: $spacer-standard $spacer-standard $spacer-standard $w-sidebar + $spacer-standard;
+  }
   article {
     background-color: $c-white;
     padding: $spacer-standard;
