@@ -39,4 +39,9 @@ $(document).ready(function() {
         }, 500);
     });
 
+    $('#sidebarToggle').on('click',function(){
+        $(this).toggleClass('opened');
+        $('body').toggleClass('sidebar-open');
+    });
+
 }); // ready() END

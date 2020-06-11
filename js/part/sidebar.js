@@ -1,13 +1,13 @@
 document.write('<aside class="site__sidebar">\n' +
     '    <!--icon toggle sidebar-->\n' +
-    '    <div id="ham"></div>\n' +
+    '    <div id="sidebarToggle" class="icon__toggle"><span></span><span></span><span></span></div>\n' +
     '    <!--icon toggle sidebar-->\n' +
     '\n' +
-    '    <h1 class="logo"><a href="https://vn.ids.jp/"><img src="'+ path_image + 'img/ids.png" width="100" alt="IDS VIETNAM Logo"/></a></h1>\n' +
+    '    <h1 class="logo"><a href="index.html"><img src="'+ path_image + 'img/ids.png" width="100" alt="IDS VIETNAM Logo"/></a></h1>\n' +
     '    <h3 class="ttl">Menu</h3>\n' +
     '<ul class="menu">\n' +
     '        <li class="menu__item">\n' +
-    '            <a href="#foreword"><span><img src="img/svg/home-solid.svg" alt="Foreword"></span>Foreword</a>\n' +
+    '            <a href="#foreword"><span><img src="img/svg/list-solid.svg" alt="Foreword"></span>Contents</a>\n' +
     '        </li>\n' +
     '        <li class="menu__item">\n' +
     '            <a href="#htmlSection"><span><img src="img/svg/html5-brands.svg" alt="html"></span>HTML</a>\n' +
