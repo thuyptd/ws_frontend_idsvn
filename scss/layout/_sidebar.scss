@@ -9,9 +9,11 @@
   padding: $spacer-standard;
 
   ul {
-    padding-left: $spacer-standard;
     li {
       list-style-type: none;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -20,13 +22,27 @@
   padding: 0;
   li {
     padding: 5px 0;
-    img {
-      max-width: 20px;
+    span {
+      display: inline-block;
+      width: 20px;
       margin-right: 10px;
+    }
+
+    &:hover {
+      span {
+        @include transition(all, 0.5s, ease-in);
+        @include transfRotate(360deg);
+        img {
+          filter: opacity(0.5);
+        }
+      }
     }
   }
 
   &__sub {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 $spacer-standard + 10px;
+    li {
+      font-size: 14px;
+    }
   }
 }

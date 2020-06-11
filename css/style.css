@@ -379,8 +379,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  color: #333333;
-  scroll-behavior: smooth; }
+  color: #333333; }
 
 body {
   min-width: 1200px;
@@ -833,6 +832,9 @@ h5 {
 .fa-html5:before {
   content: "\f13b"; }
 
+.fa-uikit:before {
+  content: "\f403"; }
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -1170,20 +1172,34 @@ h5 {
   width: 320px;
   background-color: #d5f5f5;
   padding: 20px; }
-  .site__sidebar ul {
-    padding-left: 20px; }
-    .site__sidebar ul li {
-      list-style-type: none; }
+  .site__sidebar ul li {
+    list-style-type: none; }
+    .site__sidebar ul li a {
+      text-decoration: none; }
 
 .menu {
   padding: 0; }
   .menu li {
     padding: 5px 0; }
-    .menu li img {
-      max-width: 20px;
+    .menu li span {
+      display: inline-block;
+      width: 20px;
       margin-right: 10px; }
+    .menu li:hover span {
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg); }
+      .menu li:hover span img {
+        filter: opacity(0.5); }
   .menu__sub {
-    padding: 0 0 0 40px; }
+    padding: 0 0 0 30px; }
+    .menu__sub li {
+      font-size: 14px; }
 
 .site__footer {
   text-align: center;
@@ -1237,6 +1253,27 @@ section {
     color: #fff; }
     .site__main pre .text-comment {
       color: #999999; }
+
+.scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #de6113;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .scroll__icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 8px 7px;
+    border-color: transparent transparent #fff transparent; }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ */

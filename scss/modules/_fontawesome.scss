@@ -21,6 +21,7 @@
 .#{$fa-css-prefix}-exclamation-triangle:before { content: fa-content($fa-var-exclamation-triangle); }
 .#{$fa-css-prefix}-times:before { content: fa-content($fa-var-times); }
 .#{$fa-css-prefix}-html5:before { content: fa-content($fa-var-html5); }
+.#{$fa-css-prefix}-uikit:before { content: fa-content($fa-var-uikit); }
 @import '../vendor/fontawesome/screen-reader';
 
 @font-face {
