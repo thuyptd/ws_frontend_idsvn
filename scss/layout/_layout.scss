@@ -24,11 +24,14 @@ section {
 }
 
 .site__main {
-  padding: $spacer-standard $spacer-standard $spacer-standard $w-sidebar + $spacer-standard;
+  padding: $spacer-standard;
   transition: all 0.3s ease;
   @include bgCrossDot(109px, $c-grey-light, $c-grey-light);
   background-attachment: fixed;
 
+  .sidebar-open & {
+    padding: $spacer-standard $spacer-standard $spacer-standard $w-sidebar + $spacer-standard;
+  }
   article {
     background-color: $c-white;
     padding: $spacer-standard;
@@ -46,5 +49,24 @@ section {
     .text-comment {
       color: $t-grey;
     }
+  }
+}
+
+.scroll {
+  position: fixed;
+  right: $spacer-standard;
+  bottom: $spacer-standard;
+  background-color: rgba($c-main, 1);
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &__icon {
+    @include triangle(up, 14px, 8px, $c-white);
   }
 }
