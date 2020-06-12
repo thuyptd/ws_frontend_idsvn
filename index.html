@@ -25,7 +25,7 @@
 <main class="site__main">
     <section id="home" class="text-center">
         <h2 class="ttl">Introduce about HTML, CSS, JS, UI-UX and tips</h2>
-        <p><img src="img/home.png" alt=""></p>
+        <p><img width="700" src="img/home.png" alt=""></p>
     </section>
     <section id="foreword">
         <h2 class="ttl">Contents</h2>
@@ -72,7 +72,7 @@
     </section>
 
     <section id="htmlSection">
-        <h2 class="ttl">A. HTML</h2>
+        <h2 class="ttl">HTML</h2>
         <h3 id="html1">Introduction and some key concepts</h3>
         <article>
             <h4>Concept of HTML</h4>
@@ -1139,7 +1139,7 @@
         <h3 id="javascript1">Define</h3>
         <article>
             <h4>What is javascript?</h4>
-            <p><span class="text-red">JavaScript</span> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+            <p><span class="text-red">JavaScript</span> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</p>
             <h4>So what can it really do?</h4>
             <p>The core client-side JavaScript language consists of some common programming features that allow you to do things like:</p>
             <ul>
@@ -1161,6 +1161,51 @@
                 <li>Including it as a link to an external file<br>
                 <pre><code>&lt;script src="[path]/myscript.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre></li>
             </ul>
+
+            <h4 id="javascript2">JavaScript Terms</h4>
+            <!--<article>-->
+                <h5>1. var</h5>
+                <p>Definition: This is the most common way to create a variable in JavaScript.</p>
+
+                <p>Why var is important: Variables are how we store data in memory. Variables give us the ability to keep track of all of the data for our application. Variables are nouns. They are how we define the things that we work with in our code.</p>
+
+                <h5>2. function</h5>
+                <p>Definition: This keyword allows us to define our own functions in JavaScript.</p>
+
+                <p>Why function is important: While JavaScript provides us with a rich library of available functions, when you are building an application there are going to be custom actions that you will want to make. If variables are nouns, functions are verbs. They do things, they take action.</p>
+
+                <h5>3. Conditional</h5>
+                <p>Definition: A conditional statement is of the if-then format, and allows an application to decide between one or more courses of action, based on whether a particular condition is true. Conditional statements use what is called boolean logic to determine what to do. Boolean logic is based on looking at if a statement is true, or if it is false. We use this all the time in our everyday world. “If it is raining, take an umbrella,” is an example of a conditional statement.</p>
+
+                <p>Why it is important: A conditional statement is the primary tool used by programming languages to make logical decisions. Without oversimplifying, this is the workhorse of every application and every decision that an application makes.</p>
+
+                <h5>4. Loop</h5>
+                <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)</p>
+
+                <p>The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.</p>
+
+                <h5>5. Object vs Array</h5>
+                <p>Definition: An object is the basic data structure in JavaScript. Objects have properties, also known as keys, to which are assigned values. The value can be a number, a string, an array, a function, or even another object! This allows you to build complex, but easy to use data structures.</p>
+
+                <p>Why it is important: The data structures represented by an object quite often model something in the real world. Let’s take the idea of a User for instance. A User would have a number of properties, such as e-mail address, username, password, and whether or not they are an administrator. I probably would have a function to reset my user’s password, as an example. A player in a game would have a score, a number of lives, etc. If I were a restaurant, I might have customers and transactions as the types of objects I need to represent in my code.</p>
+
+                <h5>6. Library vs. Framework</h5>
+                <p>Both frameworks and libraries are code written by someone else that is used to help solve common problems.</p>
+                <!--<h3>Advance</h3>
+                <p>Special terms are normally found in documentation and technical articles.<br> But some of them like closures are pretty standard things to know about. Knowing what the word itself means can help you know the concept it's named for better.</p>
+                <ol>
+                    <li>Arity</li>
+                    <li>Anonymous</li>
+                    <li>Closure</li>
+                    <li>Currying</li>
+                    <li>Hoisting</li>
+                    <li>Mutation</li>
+                    <li>Pragma</li>
+                    <li>Sentinel</li>
+                    <li>Vanilla</li>
+                    <li>Variadic</li>
+                </ol>-->
+            <!--</article>-->
 
             <h4>Note</h4>
             <h5>var vs let vs const in JavaScript</h5>
@@ -1198,69 +1243,45 @@
 
         </article>
 
-
-        <h3 id="javascript2">JavaScript Terms</h3>
-        <article>
-            <h4>1. var</h4>
-            <p>Definition: This is the most common way to create a variable in JavaScript.</p>
-
-            <p>Why var is important: Variables are how we store data in memory. Variables give us the ability to keep track of all of the data for our application. Variables are nouns. They are how we define the things that we work with in our code.</p>
-
-            <h4>2. function</h4>
-            <p>Definition: This keyword allows us to define our own functions in JavaScript.</p>
-
-            <p>Why function is important: While JavaScript provides us with a rich library of available functions, when you are building an application there are going to be custom actions that you will want to make. If variables are nouns, functions are verbs. They do things, they take action.</p>
-
-            <h4>3. Conditional</h4>
-            <p>Definition: A conditional statement is of the if-then format, and allows an application to decide between one or more courses of action, based on whether a particular condition is true. Conditional statements use what is called boolean logic to determine what to do. Boolean logic is based on looking at if a statement is true, or if it is false. We use this all the time in our everyday world. “If it is raining, take an umbrella,” is an example of a conditional statement.</p>
-
-            <p>Why it is important: A conditional statement is the primary tool used by programming languages to make logical decisions. Without oversimplifying, this is the workhorse of every application and every decision that an application makes.</p>
-
-            <h4>4. Loop</h4>
-            <p>There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)</p>
-
-            <p>The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.</p>
-
-            <h4>5. Object</h4>
-            <p>Definition: An object is the basic data structure in JavaScript. Objects have properties, also known as keys, to which are assigned values. The value can be a number, a string, an array, a function, or even another object! This allows you to build complex, but easy to use data structures.</p>
-
-            <p>Why it is important: The data structures represented by an object quite often model something in the real world. Let’s take the idea of a User for instance. A User would have a number of properties, such as e-mail address, username, password, and whether or not they are an administrator. I probably would have a function to reset my user’s password, as an example. A player in a game would have a score, a number of lives, etc. If I were a restaurant, I might have customers and transactions as the types of objects I need to represent in my code.</p>
-
-            <h4>6. Library vs. Framework</h4>
-            <p>Both frameworks and libraries are code written by someone else that is used to help solve common problems.</p>
-            <!--<h3>Advance</h3>
-            <p>Special terms are normally found in documentation and technical articles.<br> But some of them like closures are pretty standard things to know about. Knowing what the word itself means can help you know the concept it's named for better.</p>
-            <ol>
-                <li>Arity</li>
-                <li>Anonymous</li>
-                <li>Closure</li>
-                <li>Currying</li>
-                <li>Hoisting</li>
-                <li>Mutation</li>
-                <li>Pragma</li>
-                <li>Sentinel</li>
-                <li>Vanilla</li>
-                <li>Variadic</li>
-            </ol>-->
-        </article>
-
         <h3 id="javascript3">Library & frameworks of javascript</h3>
         <article>
             <h4>The best JavaScript libraries</h4>
             <ol>
                 <li><a href="https://community.algolia.com/places/">Jquery</a></li>
-                <li><a href="https://community.algolia.com/places/">Algolia Places</a></li>
-                <li><a href="https://www.chartjs.org/">Chart.js</a></li>
-                <li><a href="https://nosir.github.io/cleave.js/">Cleave.js</a></li>
-                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
+                <li>
+                    <a href="https://community.algolia.com/places/">Algolia Places</a>
+                    <p>Algolia Places is a JavaScript library that will help you autocomplete forms, and it specializes in addresses. You can even add a map to the search and display the location, which is incredibly useful.</p>
+                </li>
+                <li>
+                    <a href="https://www.chartjs.org/">Chart.js</a>
+                    <p>Chart.js is a delightful JavaScript library for designers and developers to add beautiful charts to a site. It offers lots of different types of charts, plus the ability to mix them in a single space to provide a really interesting data set. It also has some animation capabilities, which instantly makes data a lot more fun to consume.</p>
+                </li>
+                <li>
+                    <a href="https://d3js.org/">D3.js</a>
+                    <p>If you’re the type of person who just loves data, this JavaScript library was made for you. D3.js manipulates documents based on their content, and then will help you bring that data to life by using HTML, SVG, and CSS</p>
+                </li>
+                <li>
+                    <a href="https://christinecha.github.io/choreographer-js/">Choreographer-js</a>
+                    <p>Choreographer-js is a simple JavaScript library for animating CSS. It’s easy to use, but it can really help you achieve some cool and complex CSS animations on your site</p>
+                </li>
+                <li>
+                    <a href="https://nosir.github.io/cleave.js/">Cleave.js</a>
+                    <p>Have you ever used a form field that formatted your content while you were typing? Think of a phone number field, transforming your 1234567890 into (123) 456-7890. Cleave.js is a JavaScript library that can add that same functionality to your site. It a super simple concept, but it makes for a wonderful user experience, and consistent data when you receive form submissions.</p></li>
             </ol>
 
             <h4>The best JavaScript frameworks</h4>
             <ol>
-                <li><a href="https://angular.io/">Angular</a></li>
-                <li><a href="https://vuejs.org/">Vue.js</a></li>
-                <li><a href="https://mochajs.org/">Mocha</a></li>
-                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a></li>
+                <li><a href="https://angular.io/">Angular</a>
+                <p>Angular is built to streamline your workflow and for cross-platform purposes.</p>
+                </li>
+                <li><a href="https://vuejs.org/">Vue.js</a>
+                <p>This progressive JavaScript framework is key for building excellent user interfaces, and if you’re already familiar with HTML, CSS, and JavaScript, you’ll be able to start building things in no time! The core library is focused on the view layer, so it’s great for pairing with other libraries and projects, or simply powering single-page applications.</p>
+                </li>
+                <li><a href="https://mochajs.org/">Mocha</a>
+                    <p>This JavaScript framework runs on Node.js and the browser to bring you the ability for fun and simple testing. Mocha runs tests serially, allowing you to easily track and report what’s going on. It’s sure to be a great addition to any developer’s process. </p>
+                </li>
+                <li><a href="https://ionicframework.com/docs/v1/guide/preface.html">Ionic</a>
+                    <p>This JavaScript framework is perfect for developing HTML5 hybrid mobile apps. It’ll help you develop the front-end UI framework and create compelling interactions on your site. If you’ve used other mobile development frameworks in the past, you’ll find some similarities that make it a breeze to get started!</p></li>
             </ol>
 
             <h5><a href="https://www.javascript.com/">Small game for beginner</a></h5>
@@ -1270,7 +1291,21 @@
         <article>
             <h4>1. Replace All</h4>
             <p>We know that the string.replace () function only replaces the first occurrence. You can replace all other occurrences by adding <code>/g</code> to the end of the regex.</p>
+<pre><code>
+&lt;p&gt;Click the button to replace "blue" with "red" in the paragraph below:&lt;/p&gt;
 
+&lt;p id="demo"&gt;Mr Blue has a blue house and a blue car.&lt;/p&gt;
+
+&lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML;
+    var res = str.replace(/blue/g, "red");
+    document.getElementById("demo").innerHTML = res;
+}
+&lt;/script&gt;
+</code></pre>
             <h4>2. Conditionals</h4>
             <p>Set variable name is clear & avoid misleading & <strong>avoid using negative conditions</strong>.</p>
             <div class="tab-panels">
@@ -1341,7 +1376,7 @@ the_string = "Xin Chao";
 console.log(+the_string);
   <span class="text-comment">// NaN</span></code></pre>
 
-            <h4>Use length to resize/empty an array</h4>
+            <h4>4. Use length to resize/empty an array</h4>
             <pre><code>var numbers = [1, 2, 3, 4, 5, 6, 7];
 console.log(numbers.length);
   <span class="text-comment">// 7</span>
@@ -1353,6 +1388,32 @@ console.log(numbers);
 entries.length = 0;
 console.log(numbers);
   <span class="text-comment">// []</span></code></pre>
+
+            <h4>5. use strict</h4>
+            <div class="tab-panels">
+                <section class="tab-panel">
+                    <h5>Not use strict</h5>
+                    <pre><code>(function () {
+   a = 42;
+   console.log(a);
+   <span class="text-comment">// → 42</span>
+})();
+console.log(a);
+  <span class="text-comment">// → 42</span>
+                    </code></pre>
+                </section>
+                <section class="tab-panel">
+                    <h5>Use strict</h5>
+                    <pre><code>(function () {
+   "use strict";
+   a = 42;
+   <span class="text-comment">// Error: Uncaught ReferenceError: a is not defined</span>
+
+
+
+})();</code></pre>
+                </section>
+            </div>
         </article>
 
     </section>
@@ -1422,56 +1483,54 @@ console.log(numbers);
         </article>
         <article>
             <h3>Where does the "color of the year" trend come from and why is this year Classic Blue?</h3>
-            <img width="100%" src="./img/ui/ui-image.PNG" alt="ui image">
-            <img width="100%" src="./img/ui/color-of-the-year_2020.jpg" alt="">
-            <img width="100%" src="./img/ui/id-classic-blue-3.jpg" alt="">
-            <img width="100%" src="./img/ui/id-classic-blue-13.png" >
-            <img width="100%" src="./img/ui/id-classic-blue-18.png" >
+            <p class="text-center"><img width="100%" src="./img/ui/ui-image.PNG" alt="ui image"></p>
+            <p class="text-center"><img width="100%" src="./img/ui/color-of-the-year_2020.jpg" alt=""></p>
+            <p class="text-center"><img width="100%" src="./img/ui/id-classic-blue-3.jpg" alt=""></p>
+            <p class="text-center"><img width="100%" src="./img/ui/id-classic-blue-13.png" ></p>
+            <p class="text-center"><img width="100%" src="./img/ui/id-classic-blue-18.png" ></p>
            
             <h3>Pure round</h3>
-            <img width="100%" src="./img/ui/vongthuansat.PNG" >
-            <img width="100%" src="./img/ui/vongthuansac1..PNG" >
+            <p class="text-center"><img width="70%" src="./img/ui/vongthuansat.PNG" ></p>
+            <p class="text-center"><img width="70%" src="./img/ui/vongthuansac1..PNG" ></p>
             <h3>Color level 1</h3>
-            <img width="100%" src="./img/ui/maubac1.PNG" >
+            <p class="text-center"><img width="100%" src="./img/ui/maubac1.PNG" ></p>
             <h3 width="100%">Color level 2</h3>
-            <img width="100%" src="./img/ui/maubac2.PNG" >
+            <p class="text-center"><img width="100%" src="./img/ui/maubac2.PNG" ></p>
             <h3>Color level 3</h3>
-            <img width="100%" src="./img/ui/maubac3.PNG" >
-            <img width="100%" src="./image new/phoi mau.PNG" >
-            <img width="100%" src="./image new/mau nong - lanh.PNG" >
+            <p class="text-center"><img width="100%" src="./img/ui/maubac3.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./image new/phoi mau.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./image new/mau nong - lanh.PNG" ></p>
             <h3>HSL</h3>
-            <img width="100%" src="./image new/hue-stuation-luminent.PNG" >
+            <p class="text-center"><img width="100%" src="./image new/hue-stuation-luminent.PNG" ></p>
           
 
             <h3>Used Color level 1</h3>
-            <img width="100%" src="./img/ui/2.PNG" >
+            <p class="text-center"><img width="100%" src="./img/ui/2.PNG" ></p>
             
-            <img width="100%" src="./img/ui/123.jpg" >
+            <p class="text-center"><img width="100%" src="./img/ui/123.jpg" ></p>
             <h3>Used Color level 2 color </h3>
-            <img width="100%" src="./img/ui/dung2mautuongdong.PNG" >
+            <p class="text-center"><img width="100%" src="./img/ui/dung2mautuongdong.PNG" ></p>
             <h3>Used Color level 2 color - complementary color </h3>
-            <img width="100%" src="./image new/monnochomatic.PNG" >
-            <img width="100%" src="./img/ui/maubotuccc.PNG" >
-            <img width="100%" src="./image new/dudu.PNG" >
+            <p class="text-center"><img width="100%" src="./image new/monnochomatic.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./img/ui/maubotuccc.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./image new/dudu.PNG" ></p>
 
-            <img width="100%" src="./image new/spit complementary.PNG" >
-            <img width="100%" src="./image new/aubotucboba.PNG" >
-            <img width="100%" src="./image new/complemetart-botuc.PNG" >
-            <img width="100%" src="./image new/analoous.PNG" >
-           
-            
-          
+            <p class="text-center"><img width="100%" src="./image new/spit complementary.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./image new/aubotucboba.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./image new/complemetart-botuc.PNG" ></p>
+            <p class="text-center"><img width="100%" src="./image new/analoous.PNG" ></p>
 
-            
             <a href="https://blog.tubikstudio.com/color-theory-brief-guide-for-designers/">Theory of color</a>
            
         </article>
     </section>
+    <section id="referenceSection">
+        <h2 class="ttl">Reference</h2>
+        <p><a href="https://color.adobe.com/create/color-wheel">https://color.adobe.com/create/color-wheel</a></p>
+    </section>
     <section id="fqa">
-        <h2 class="ttl">Referentce</h2>
         <article class="text-center">
             <p><img src="img/fqa.jpg" alt="Frequesntly Questions Asked"></p>
-            https://color.adobe.com/create/color-wheel
         </article>
     </section>
 </main><!--/.site__main-->
