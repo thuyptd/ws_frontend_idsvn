@@ -1076,9 +1076,108 @@
             </div>
             <h3>Tips for you</h3>
             <div class="trick">
-                <h4>Vertical align with flex</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-slug-hash="zYrYNER" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="zYrYNER">
-                </p>
+                <h4>Use @for to Build Your Own Utility Classes</h4>
+                <div class="tabs2" style="">
+                <div class="tabset2">
+                    <!-- Tab 1 -->
+                    <input type="radio" name="tabset7" id="tab18" aria-controls="SCSS" checked>
+                    <label for="tab18">SCSS</label>
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tabset7" id="tab19" aria-controls="Sass">
+                    <label for="tab19">Sass</label>
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tabset7" id="tab20" aria-controls="CSS">
+                    <label for="tab20" class="tab_css_lb">CSS</label>
+
+                    <div class="tab-panels2">
+                        <section class="tab-panel2">
+                        <pre class="highlight scss"><code>
+                            @for $i from 1 through 2 {
+                              .mr-t-#{$i * 5} {
+                                margin-top: #{$i * 5}px;
+                              }
+                            }
+
+                            @for $i from 1 through 2 {
+                              .p-b-#{$i * 5} {
+                                padding-bottom: #{$i * 5}px;
+                              }
+                            }
+                        </code></pre>
+                        </section>
+                        <section class="tab-panel2">
+                        <pre class="highlight sass"><code>
+                            
+                        </code></pre>
+                        </section>
+                        <section class="tab-panel2 tab_css">
+                        <pre class="highlight css"><code>
+                        .mr-t-5 {
+                          margin-top: 5px; }
+
+                        .mr-t-10 {
+                          margin-top: 10px; }
+
+                        .p-b-5 {
+                          padding-bottom: 5px; }
+
+                        .p-b-10 {
+                          padding-bottom: 10px; }
+                        </code></pre>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="trick">
+                <h4></h4>
+                <div class="tabs2" style="">
+                    <div class="tabset2">
+                        <!-- Tab 1 -->
+                        <input type="radio" name="tabset8" id="tab21" aria-controls="SCSS" checked>
+                        <label for="tab21">SCSS</label>
+                        <!-- Tab 2 -->
+                        <input type="radio" name="tabset8" id="tab22" aria-controls="Sass">
+                        <label for="tab22">Sass</label>
+                        <!-- Tab 3 -->
+                        <input type="radio" name="tabset8" id="tab23" aria-controls="CSS">
+                        <label for="tab23" class="tab_css_lb">CSS</label>
+
+                        <div class="tab-panels2">
+                            <section class="tab-panel2">
+                            <pre class="highlight scss"><code>
+                                @for $i from 1 through 3 {
+                                    $width: percentage(1 / $i);
+                                 
+                                    .col-#{$i} {
+                                        width: $width;
+                                    }
+                                }
+                            </code></pre>
+                            </section>
+                            <section class="tab-panel2">
+                            <pre class="highlight sass"><code>
+                                
+                            </code></pre>
+                            </section>
+                            <section class="tab-panel2 tab_css">
+                            <pre class="highlight css"><code>
+                            .col-1 {
+                              width: 100%; }
+
+                            .col-2 {
+                              width: 50%; }
+
+                            .col-3 {
+                              width: 33.33333%; }
+                            </code></pre>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="trick">
                 <h4>Truncate the string</h4>
@@ -1086,28 +1185,8 @@
                 </p>
             </div>
             <div class="trick">
-                <h4>Shape outside</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"  data-slug-hash="LYGYymj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="LYGYymj">
-                </p>
-            </div>
-            <div class="trick">
                 <h4>Image background responsive</h4>
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result"  data-slug-hash="KKVKmYp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KKVKmYp">
-                </p>
-            </div>
-            <div class="trick">
-                <h4>Remove the space below an image</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"  data-slug-hash="gOPORYE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gOPORYE">
-                </p>
-            </div>
-            <div class="trick">
-                <h4>Selector :not()</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="locnguyendn" data-slug-hash="mdVdmNQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="mdVdmNQ">
-                </p>
-            </div>
-            <div class="trick">
-                <h4>currentColor</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="locnguyendn" data-slug-hash="jOWOwMq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="jOWOwMq">
                 </p>
             </div>
             <h3>CSS framework</h3>
@@ -1434,16 +1513,18 @@ console.log(a);
             <img width="100%" src="./img/ui/ui-ux-3.PNG" alt="">
             <p>Compared to the previous 90s, in the early days of web design, a person often had to handle the entire process. You have to write content, take pictures, cum the interface design, programming and putting the website on the server. But today, the complexity of the application system or website is much more ambiguous, the number of visitors is increasing, software applications need to be updated continuously and regularly. It will be impossible in the present time for one person to be able to do all the above well, the amount of work that needs to be shared to each different department.</p>
             <img width="100%" src="./img/ui/ui-ux-4.PNG" alt="">
-            <p>The conclusion is that the process of developing a product whether in UI / UX industry or elsewhere, requires the cooperation of many different industries and skill sets. The first thing you need to do is to research and research to select the positions that make you feel comfortable and comfortable in your UI / UX development career.</p>
         </article>
         <article>
             <h3>1. User Interface</h3>
             <p>Users are interpreted as consumers or interact with Content (content), and Interface is a way to help users reach the Content (content) they want.</p>
             <img width="100%" src="./img/user interface.PNG" alt="">
-            <p>Users are interpreted as consumers or interact with Content (content), and Interface is a way to help users reach the Content (content) they want.</p>
             <img width="100%" src="./img/ui-uxne.png" alt="">
             <p>Understanding and separating the UI and UX jobs is very important, because each position will suit each interest and require different skill sets. For example, those who are passionate about and interested in shapes and colors will be more suitable in the field of interface design, belonging to visual design. In contrast to those who do not like to work on graphic images too much (non-visual design), but have a passion in the stages of research (research), planing (planning), and testing (testing). ). In other words, UI designers often pay attention to the graphic elements and aesthetics that appear on the interface, as well as visual perception when users use the product. UX designers will also be particularly interested in user perceptions, but they are more about macro issues like navigation (navigation), stucture (information organization structure), and user story ( user stories), with the ultimate goal of providing a unified experience throughout the entire product.</p>
             <img width="100%" src="./img/hahahaha.png" alt="">
+        <br>
+            <img width="100%" src="./image new/tubik-studio-wireframing-UI-UX-design-1024x705.jpg" alt="">
+            <img width="100%" src="./image new/mobile_app_wireframe.jpg" alt="">
+            <p>Tool Wireframe, Sketch, mockup design</p>
             <p>In most cases, the UI designer will be in charge of designing the appearance of the product, as well as the brand identity system, which generally involves design driven tasks. ). On the other hand, UX designers care about the core content, how to get users absorbed in the positive experience of the product, and then continuously receive feedback from users to improve. experience. It can be said that the relevant UX designer is more user-driven (user driven).</p>
             <img width="100%" src="./img/uuxuxux.png" alt="">
            
@@ -1466,29 +1547,34 @@ console.log(a);
             <img width="100%" src="./img/ui/sliderhinhfanh2.PNG" alt="">
             <a href="https://www.prezman.fr/">Prezman </a>
             </section>
-            <h3>3. Some UI templates for mobile</h3>
-            <h4>4. Ecommerce screens</h4>
+            <section>
+            <h3>4. Ecommerce screens</h3>
             <h4>4.1. Category</h4>
             <img width="100%" src="./img/id_15-dang-man-hinh-co-ban-de-thiet-ke-ui-tren-mobile_9-1.gif" alt="">
             <h4>4.2. Product</h4>
             <img width="100%" src="./img/id_15-dang-man-hinh-co-ban-de-thiet-ke-ui-tren-mobile_10.gif" alt="">
-            <h4>5.Golden ratio in design </h4>
+            <h3>5.Golden ratio in design </h3>
             <h4>5.1 Geometry</h4>
+           
             <img width="100%" src="./img/ty le vang trong thiet ke geo.png" alt="">
+            <img width="100%" src="./image new/Login_HR_ZONE_v1.png" >
+            <img width="100%" src="./image new/Login_HR_ZONE_v1 –  Golden ratio in design_dayne.png" alt="">
+            <img width="100%" src="./image new/golden.PNG" alt="">
+         
             <img width="100%" src="./img/tylevang trongthietke.jpeg" alt="">
             <img width="100%" src="./img/tylevangthuchanh.png" alt="">
             <img width="100%" src="./img/tylevangthuchanh1.png" alt="">
-
+            </section>
 
         </article>
         <article>
             <h3>Where does the "color of the year" trend come from and why is this year Classic Blue?</h3>
-            <p class="text-center"><img width="100%" src="./img/ui/ui-image.PNG" alt="ui image"></p>
-            <p class="text-center"><img width="100%" src="./img/ui/color-of-the-year_2020.jpg" alt=""></p>
-            <p class="text-center"><img width="100%" src="./img/ui/id-classic-blue-3.jpg" alt=""></p>
-            <p class="text-center"><img width="100%" src="./img/ui/id-classic-blue-13.png" ></p>
-            <p class="text-center"><img width="100%" src="./img/ui/id-classic-blue-18.png" ></p>
-           
+            <img width="100%" src="./img/ui/ui-image.PNG" alt="ui image">
+            <img width="100%" src="./img/ui/color-of-the-year_2020.jpg" alt="">
+            <img width="100%" src="./img/ui/id-classic-blue-3.jpg" alt="">
+            <img width="100%" src="./img/ui/id-classic-blue-13.png" >
+            <img width="100%" src="./img/ui/id-classic-blue-18.png" >
+
             <h3>Pure round</h3>
             <p class="text-center"><img width="70%" src="./img/ui/vongthuansat.PNG" ></p>
             <p class="text-center"><img width="70%" src="./img/ui/vongthuansac1..PNG" ></p>
@@ -1497,12 +1583,16 @@ console.log(a);
             <h3 width="100%">Color level 2</h3>
             <p class="text-center"><img width="100%" src="./img/ui/maubac2.PNG" ></p>
             <h3>Color level 3</h3>
-            <p class="text-center"><img width="100%" src="./img/ui/maubac3.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./image new/phoi mau.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./image new/mau nong - lanh.PNG" ></p>
+
+            <img width="100%" src="./img/ui/maubac3.PNG" >
+            <img width="100%" src="./image new/phoi mau.PNG" >
+            <img width="100%" src="./image new/mau nong - lanh.PNG" >
+            <img width="100%" src="./image new/mau khong có sac tó.PNG" >
+
             <h3>HSL</h3>
-            <p class="text-center"><img width="100%" src="./image new/hue-stuation-luminent.PNG" ></p>
-          
+            
+            <img width="100%" src="./image new/lunimate.PNG" >
+            <img width="100%" src="./image new/hue-stuation-luminent.PNG" >
 
             <h3>Used Color level 1</h3>
             <p class="text-center"><img width="100%" src="./img/ui/2.PNG" ></p>
@@ -1511,16 +1601,24 @@ console.log(a);
             <h3>Used Color level 2 color </h3>
             <p class="text-center"><img width="100%" src="./img/ui/dung2mautuongdong.PNG" ></p>
             <h3>Used Color level 2 color - complementary color </h3>
-            <p class="text-center"><img width="100%" src="./image new/monnochomatic.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./img/ui/maubotuccc.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./image new/dudu.PNG" ></p>
 
-            <p class="text-center"><img width="100%" src="./image new/spit complementary.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./image new/aubotucboba.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./image new/complemetart-botuc.PNG" ></p>
-            <p class="text-center"><img width="100%" src="./image new/analoous.PNG" ></p>
+            <img width="100%" src="./image new/monnochomatic.PNG" >
+            <img width="100%" src="./img/ui/maubotuccc.PNG" alt="mau bo tuc bac 3" >
+            <img width="100%" src="./image new/dudu.PNG" >
+          
 
+            <img width="100%" src="./image new/spit complementary.PNG" >
+            <img width="100%" src="./image new/aubotucboba.PNG" >
+            <img width="100%" src="./image new/complemetart-botuc.PNG" >
+            <img width="100%" src="./image new/jessy_maubo_4.PNG" >
+
+            <img width="100%" src="./image new/analoous.PNG" >
+            <img width="100%" src="./image new/tooltestui.PNG" >
+            <img width="100%" src="./image new/vsbug.PNG">
             <a href="https://blog.tubikstudio.com/color-theory-brief-guide-for-designers/">Theory of color</a>
+            
+            <br>
+            <a href="https://color.adobe.com/create/color-wheel">Tool choose color</a>
            
         </article>
     </section>
@@ -1531,6 +1629,7 @@ console.log(a);
     <section id="fqa">
         <article class="text-center">
             <p><img src="img/fqa.jpg" alt="Frequesntly Questions Asked"></p>
+
         </article>
     </section>
 </main><!--/.site__main-->
