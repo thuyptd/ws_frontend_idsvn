@@ -42,6 +42,7 @@ document.write('<aside class="site__sidebar">\n' +
     '            <ul class="menu__sub">\n' +
     '                <li><a href="#uiux1">Define</a></li>\n' +
     '                <li><a href="#uiux2">Design trends in May</a></li>\n' +
+    '                <li><a href="#uiux2">Color</a></li>\n' +
     '            </ul>\n' +
     '        </li>\n' +
     '        <li class="menu__item">\n' +
