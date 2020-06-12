@@ -1076,9 +1076,108 @@
             </div>
             <h3>Tips for you</h3>
             <div class="trick">
-                <h4>Vertical align with flex</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-slug-hash="zYrYNER" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="zYrYNER">
-                </p>
+                <h4>Use @for to Build Your Own Utility Classes</h4>
+                <div class="tabs2" style="">
+                <div class="tabset2">
+                    <!-- Tab 1 -->
+                    <input type="radio" name="tabset7" id="tab18" aria-controls="SCSS" checked>
+                    <label for="tab18">SCSS</label>
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tabset7" id="tab19" aria-controls="Sass">
+                    <label for="tab19">Sass</label>
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tabset7" id="tab20" aria-controls="CSS">
+                    <label for="tab20" class="tab_css_lb">CSS</label>
+
+                    <div class="tab-panels2">
+                        <section class="tab-panel2">
+                        <pre class="highlight scss"><code>
+                            @for $i from 1 through 2 {
+                              .mr-t-#{$i * 5} {
+                                margin-top: #{$i * 5}px;
+                              }
+                            }
+
+                            @for $i from 1 through 2 {
+                              .p-b-#{$i * 5} {
+                                padding-bottom: #{$i * 5}px;
+                              }
+                            }
+                        </code></pre>
+                        </section>
+                        <section class="tab-panel2">
+                        <pre class="highlight sass"><code>
+                            
+                        </code></pre>
+                        </section>
+                        <section class="tab-panel2 tab_css">
+                        <pre class="highlight css"><code>
+                        .mr-t-5 {
+                          margin-top: 5px; }
+
+                        .mr-t-10 {
+                          margin-top: 10px; }
+
+                        .p-b-5 {
+                          padding-bottom: 5px; }
+
+                        .p-b-10 {
+                          padding-bottom: 10px; }
+                        </code></pre>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="trick">
+                <h4></h4>
+                <div class="tabs2" style="">
+                    <div class="tabset2">
+                        <!-- Tab 1 -->
+                        <input type="radio" name="tabset8" id="tab21" aria-controls="SCSS" checked>
+                        <label for="tab21">SCSS</label>
+                        <!-- Tab 2 -->
+                        <input type="radio" name="tabset8" id="tab22" aria-controls="Sass">
+                        <label for="tab22">Sass</label>
+                        <!-- Tab 3 -->
+                        <input type="radio" name="tabset8" id="tab23" aria-controls="CSS">
+                        <label for="tab23" class="tab_css_lb">CSS</label>
+
+                        <div class="tab-panels2">
+                            <section class="tab-panel2">
+                            <pre class="highlight scss"><code>
+                                @for $i from 1 through 3 {
+                                    $width: percentage(1 / $i);
+                                 
+                                    .col-#{$i} {
+                                        width: $width;
+                                    }
+                                }
+                            </code></pre>
+                            </section>
+                            <section class="tab-panel2">
+                            <pre class="highlight sass"><code>
+                                
+                            </code></pre>
+                            </section>
+                            <section class="tab-panel2 tab_css">
+                            <pre class="highlight css"><code>
+                            .col-1 {
+                              width: 100%; }
+
+                            .col-2 {
+                              width: 50%; }
+
+                            .col-3 {
+                              width: 33.33333%; }
+                            </code></pre>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="trick">
                 <h4>Truncate the string</h4>
@@ -1086,28 +1185,8 @@
                 </p>
             </div>
             <div class="trick">
-                <h4>Shape outside</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"  data-slug-hash="LYGYymj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="LYGYymj">
-                </p>
-            </div>
-            <div class="trick">
                 <h4>Image background responsive</h4>
                 <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result"  data-slug-hash="KKVKmYp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="KKVKmYp">
-                </p>
-            </div>
-            <div class="trick">
-                <h4>Remove the space below an image</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result"  data-slug-hash="gOPORYE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="gOPORYE">
-                </p>
-            </div>
-            <div class="trick">
-                <h4>Selector :not()</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="locnguyendn" data-slug-hash="mdVdmNQ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="mdVdmNQ">
-                </p>
-            </div>
-            <div class="trick">
-                <h4>currentColor</h4>
-                <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="locnguyendn" data-slug-hash="jOWOwMq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="jOWOwMq">
                 </p>
             </div>
             <h3>CSS framework</h3>
